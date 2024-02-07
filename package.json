@@ -26,5 +26,5 @@
     "hexo-theme-landscape": "^0.0.3"
   },
   "engines": {
-    "node": ">=20.0.0"}
+    "node": "18.x" }
 }
