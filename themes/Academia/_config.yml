@@ -11,9 +11,10 @@ since: 2020
 # #title 为页内跳转，单页模式
 # 可以选择外链或其他页面
 menu:
-  Publications: /#Publications
+  Publications: /#Publication
+  Projects: /#Project
   About: /
-  Blog: https://luuvy757.github.io/
+  # Blog: https://luuvy757.github.io/
 
 # flink picture will load if avator link calls on error
 loading_bg:
