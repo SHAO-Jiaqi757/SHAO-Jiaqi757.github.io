@@ -3,7 +3,7 @@ favicon: /img/favicon.png
 avatar: /img/profile.png
 # if author sets in hexo_config, this string doesn't work
 author: 'Jiaqi'
-author_bio: ''
+author_bio: 'Federated Learning, Distributed Edge AI, Privacy-Preserving Machine Learning.'
 
 since: 2020
 

@@ -11,8 +11,7 @@ Doctor of Philosophy (PhD) in Electronic and Computer Engineering
 
 **The Chinese University of Hong Kong, Shenzhen** (2019 — 2023)
 Bachelor of Engineering in Electrical and Computer Engineer, Stream: *Computer Engineering*
-# Research Interest
-Federated Learning, Distributed Edge AI, Privacy-Preserving Machine Learning.
+
 # Publication
 <ol>
 <li><b>Shao, J.</b>, <a href="https://tlin-taolin.github.io/">Lin, T.</a>, <a href="https://ece.hkust.edu.hk/eexcao">Cao, X.</a>, and <a href="https://luobing1008.github.io/">Luo, B.</a>, “Federated Unlearning: a Perspective of Stability and Fairness”, <i>arXiv e-prints</i>, 2024. doi:10.48550/arXiv.2402.01276.</li>
