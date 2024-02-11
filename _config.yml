@@ -103,4 +103,6 @@ theme: Academia
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/SHAO-Jiaqi757/SHAO-Jiaqi757.github.io
+  branch: gh-pages
