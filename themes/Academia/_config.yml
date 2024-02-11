@@ -30,7 +30,7 @@ social_links:
   # fab fa-facebook-square: /
   fab fa-github: https://github.com/luuvy757
   # fab fa-stack-overflow: /
-  # fab fa-linkedin: /
+  # fab fa-linkedin: 
   # fab fa-weibo: /
   # fab fa-weixin: /
   # fab fa-qq: /
@@ -43,11 +43,11 @@ e_social:
   enable: true
 e_social_links:
   Google Scholar: / || fas fa-graduation-cap
-  ORCID: / || fab fa-orcid
+  # ORCID: / || fab fa-orcid
 
 # CV download link
 cv_dl:
-  enable: true
+  enable: false
   dir: /attaches/CV.pdf
   description: My Detail CV.
 
