@@ -248,11 +248,15 @@ blockquote
   li
     font-size 1.8rem
   a
-    color #494e52
+    color rgb(74, 182, 64)
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    text-decoration: none; /* Removes the underline */
+    border-bottom: 1px dashed; /* Adds a bottom border */
+    /* For a hover effect to indicate it's clickable */
     &:hover
-      color: $theme-red;
+      text-decoration: underline; /* Adds underline on hover for visual feedback */
+      color: rgb(2, 139, 16); /* Darkens the color on hover */
 
   .highlight
     overflow: auto;
