@@ -17,6 +17,7 @@ Bachelor of Engineering in Electrical and Computer Engineer, Stream: *Computer E
 
 # Publications
 <ol>
+<li><b>Shao, J.</b>,Yuan, T., <a href="https://tlin-taolin.github.io/">Lin, T.</a>, <a href="https://ece.hkust.edu.hk/eexcao">Cao, X.</a>, and <a href="https://luobing1008.github.io/">Luo, B.</a>, Cognitive Insights and Stable Coalition Matching for Fostering Multi-Agent Cooperation, <i>arXiv e-prints</i>, arXiv:2405.18044.</li>
 <li><b>Shao, J.</b>, <a href="https://tlin-taolin.github.io/">Lin, T.</a>, <a href="https://ece.hkust.edu.hk/eexcao">Cao, X.</a>, and <a href="https://luobing1008.github.io/">Luo, B.</a>, “Federated Unlearning: a Perspective of Stability and Fairness”, <i>arXiv e-prints</i>, 2024. doi:10.48550/arXiv.2402.01276.</li>
 <li><b>Shao, J.</b>, Han, S., <a href="https://chaoyanghe.com/">He, C.</a>, and <a href="https://luobing1008.github.io/">Luo, B.</a>, "Privacy-Preserving Federated Heavy Hitter Analytics for Non-IID Data", in Workshop on Federated Learning and Analytics in Practice: Algorithms, Systems, Applications, and Opportunities, in Conjunction with ICML 2023 (FL-ICML' 23), Jul. 2023.</li>
 </ol>
