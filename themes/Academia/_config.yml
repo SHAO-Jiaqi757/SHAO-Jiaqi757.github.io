@@ -48,7 +48,7 @@ e_social_links:
 
 # CV download link
 cv_dl:
-  enable: false
+  enable: true
   dir: /attaches/CV.pdf
   description: My Detail CV.
 
