@@ -6,9 +6,9 @@ academia: true
 ---
 
 # Education 
-**Hong Kong University of Science and Technology** (2023 -)
+**Hong Kong University of Science and Technology** (2023 Fall -)
 Doctor of Philosophy (PhD) in Electronic and Computer Engineering
-> My supervior: [Prof. Xuanyu Cao (HKUST)](https://ece.hkust.edu.hk/eexcao) (Mentor: [Prof. Bing Luo (DKU)](https://luobing1008.github.io/))
+> My supervior: [Prof. Wei Zhang (HKUST)](https://seng.hkust.edu.hk/about/people/faculty/wei-zhang) (Mentor: [Prof. Bing Luo (DKU)](https://luobing1008.github.io/))
 
 **The Chinese University of Hong Kong, Shenzhen** (2019 — 2023)
 Bachelor of Engineering in Electrical and Computer Engineer, Stream: *Computer Engineering*
