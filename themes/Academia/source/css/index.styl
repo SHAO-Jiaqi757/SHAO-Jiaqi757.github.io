@@ -225,18 +225,38 @@ blockquote
   h1
     font-size 3rem
   h2
-    font-size 2.8rem
+    font-size 2.2rem
+    font-style: italic
+    // add colored vertical line on left text box
+    position: relative
+    padding-left: 1.2rem
+    &::before
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+      width: 4px
+      height: 100%
+      background-color: rgba(0, 128, 0, 0.877) 
+  
+  
+
   h3
-    font-size 2.6rem
+    font-size 1.6rem
+
   p,
   li
     font-size 1.8rem
   a
-    color #494e52
+    color rgb(74, 182, 64)
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    text-decoration: none; /* Removes the underline */
+    border-bottom: 1px dashed; /* Adds a bottom border */
+    /* For a hover effect to indicate it's clickable */
     &:hover
-      color: $theme-red;
+      text-decoration: underline; /* Adds underline on hover for visual feedback */
+      color: rgb(2, 139, 16); /* Darkens the color on hover */
 
   .highlight
     overflow: auto;

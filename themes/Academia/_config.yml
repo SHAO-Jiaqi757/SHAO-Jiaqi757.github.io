@@ -3,7 +3,7 @@ favicon: /img/favicon.png
 avatar: /img/profile.png
 # if author sets in hexo_config, this string doesn't work
 author: 'Jiaqi'
-author_bio: ''
+author_bio: 'Federated Learning, Distributed Edge AI, Privacy-Preserving Machine Learning.'
 
 since: 2020
 
@@ -12,8 +12,10 @@ since: 2020
 # 可以选择外链或其他页面
 menu:
   Publications: /#Publications
+  Projects: /#Projects
+  Teaching: /#Teaching-Assistant
   About: /
-  Blog: https://luuvy757.github.io/
+  # Blog: https://luuvy757.github.io/
 
 # flink picture will load if avator link calls on error
 loading_bg:
@@ -27,9 +29,9 @@ social:
 social_links:
   # fab fa-twitter: /
   # fab fa-facebook-square: /
-  fab fa-github: https://github.com/luuvy757
+  fab fa-github: https://github.com/SHAO-Jiaqi757
   # fab fa-stack-overflow: /
-  # fab fa-linkedin: /
+  fab fa-linkedin: https://www.linkedin.com/in/jiaqi-shao757/
   # fab fa-weibo: /
   # fab fa-weixin: /
   # fab fa-qq: /
@@ -41,8 +43,8 @@ social_links:
 e_social:
   enable: true
 e_social_links:
-  Google Scholar: / || fas fa-graduation-cap
-  ORCID: / || fab fa-orcid
+  Google Scholar: https://scholar.google.com/citations?user=P8MtRXMAAAAJ&hl=zh-CN || fas fa-graduation-cap
+  # ORCID: / || fab fa-orcid
 
 # CV download link
 cv_dl:
