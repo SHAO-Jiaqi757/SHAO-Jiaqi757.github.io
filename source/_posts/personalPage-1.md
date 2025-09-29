@@ -31,9 +31,10 @@ Bachelor of Engineering in Electrical and Computer Engineer, Stream: *Computer E
 
 # Projects
 ## MASArena: Benchmarking Framework for Multi-Agent Systems
-* MASArena is an open-source, modular benchmarking framework for single- and multi-agent systems, co-developed by DKU-Edge Intelligence Lab and Westlake University LINs-Lab.
-* Features plug-and-play modules, built-in benchmarks, visual debugging, and easy agent/tool/dataset integration.
-* Supports academic experiment reproduction, agent comparison, and toolchain evaluation.
+* **Led the design and implementation** of MASArena, an open-source, modular benchmarking framework for single- and multi-agent systems, co-developed by DKU-Edge Intelligence Lab and Westlake University LINs-Lab.
+* **Architected the core framework** with plug-and-play modules, built-in benchmarks, visual debugging capabilities, and seamless agent/tool/dataset integration.
+* **Implemented key components** including experiment orchestration, agent lifecycle management, and real-time monitoring infrastructure.
+* **Designed the evaluation pipeline** to support academic experiment reproduction, agent comparison, and toolchain evaluation with comprehensive metrics collection.
 * Open-source and actively maintained. [GitHub link](https://github.com/LINs-lab/MASArena)
 
 ## FedKit: Enabling Cross-Platform Federated Learning for Android and iOS
