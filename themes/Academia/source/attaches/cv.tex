@@ -1,0 +1,207 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fontawesome5} % For icons like Github, Linkedin, Mail
+\usepackage{tcolorbox} % For colored boxes
+\usepackage{parskip} % Better paragraph spacing
+\usepackage{mathptmx} % Use Times/Georgia-like font family
+\usepackage[T1]{fontenc} % Better font encoding
+
+% Define colors
+\definecolor{linkcolor}{RGB}{25,118,210} % Modern blue
+\definecolor{sectioncolor}{RGB}{99,102,241} % Indigo accent
+\definecolor{namecolor}{RGB}{15,23,42} % Very dark blue
+\definecolor{graytext}{RGB}{71,85,105} % Slate gray
+\definecolor{itemcolor}{RGB}{30,41,59} % Dark slate
+\definecolor{accentcolor}{RGB}{0,0,0} % 
+\definecolor{lightgray}{RGB}{241,245,249} % Light background
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=magenta,      
+    urlcolor=linkcolor,
+    citecolor=linkcolor,
+}
+
+% Suppress page numbers
+\pagenumbering{gobble}
+
+% Set default font family to Times/Georgia-like
+\renewcommand{\familydefault}{\rmdefault}
+
+% Section formatting
+\titleformat{\section}
+  {\Large\bfseries\color{sectioncolor}}
+  {\thesection}
+  {1em}
+  {\color{accentcolor}\rule[-0.3em]{0.5em}{0.4em}\hspace{0.5em}}
+
+\titleformat{\subsection}
+  {\large\bfseries\color{sectioncolor}}
+  {\thesubsection}
+  {1em}
+  {}
+
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\color{itemcolor}}
+  {\thesubsubsection}
+  {1em}
+  {}
+
+% Reduce spacing between items in lists
+\setlist[itemize]{noitemsep, topsep=0.3em, leftmargin=1.5em}
+\setlist[enumerate]{noitemsep, topsep=0.3em, leftmargin=1.5em}
+
+% Custom itemize style with colored bullets
+\renewcommand{\labelitemi}{\textcolor{accentcolor}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{accentcolor}{\textendash}}
+
+% Name and Contact Information
+\newcommand{\myName}{Jiaqi Shao}
+\newcommand{\myInterests}{ LLM Agents \textbar{} MAS \textbar{} Federated Learning \textbar{} Distributed Edge AI}
+\newcommand{\myGithub}{https://github.com/SHAO-Jiaqi757} % Replace with actual GitHub link
+\newcommand{\myLinkedin}{} % Replace with actual LinkedIn link
+\newcommand{\myEmail}{js1139@duke.edu} % Replace with actual email
+\newcommand{\myScholar}{https://scholar.google.com/citations?user=P8MtRXMAAAAJ&hl=zh-CN}
+
+\begin{document}
+
+% Header Section
+\begin{center}
+    {\fontsize{28}{34}\selectfont\textbf{\color{namecolor}\myName}} \\ \vspace{0.3em}
+    {\color{graytext}\fontsize{12}{14}\selectfont\myInterests} \\ \vspace{0.4em}
+    \begin{tabular}{c c c c}
+        \faGithub\enspace \href{\myGithub}{\color{linkcolor}GitHub} &
+        \faLinkedin\enspace \href{\myLinkedin}{\color{linkcolor}LinkedIn} &
+        \faEnvelope\enspace \href{mailto:\myEmail}{\color{linkcolor}Email} &
+        \faGraduationCap\enspace \href{https://scholar.google.com/citations?user=P8MtRXMAAAAJ\&hl=zh-CN}{\color{linkcolor}Google Scholar}
+    \end{tabular}
+\end{center}
+\vspace{0.8em}
+
+% Add a subtle horizontal line
+\noindent\color{accentcolor}\rule{\textwidth}{0.5pt}
+\vspace{0.8em}
+
+% Navigation (Optional in PDF, more for web - but can be kept for structure)
+% \begin{center}
+%     \href{#education}{\color{graytext}Education} \quad \textbar \quad
+%     \href{#publications}{\color{graytext}Publications} \quad \textbar \quad
+%     \href{#projects}{\color{graytext}Projects} \quad \textbar \quad
+%     \href{#teaching}{\color{graytext}Teaching} \quad \textbar \quad
+%     \href{#about}{\color{graytext}About}
+% \end{center}
+% \vspace{1em}
+
+
+% Education Section
+\section*{\color{sectioncolor}Education}
+    \subsubsection*{\color{itemcolor}Hong Kong University of Science and Technology}
+    \textit{\color{graytext}Doctor of Philosophy (PhD) in Electronic and Computer Engineering} \hfill \color{accentcolor}\textbf{2023 Fall – Present} \\
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
+        \vspace{-1em}
+        \item \small{\color{graytext}Supervisor: Prof. Wei Zhang (HKUST) (Mentor: Prof. Bing Luo (DKU))}
+    \end{itemize}
+    \vspace{0.3em}
+    \subsubsection*{\color{itemcolor}The Chinese University of Hong Kong, Shenzhen}
+    \textit{\color{graytext}Bachelor of Engineering in Electrical and Computer Engineer} \hfill \color{accentcolor}\textbf{2019 – 2023} \\
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
+        \vspace{-1em}
+        \item \small{\color{graytext}Stream: Computer Engineering}
+    \end{itemize}
+\vspace{0.8em}
+
+% Publications Section
+\section*{\color{sectioncolor}Publications}
+\begin{enumerate}[label=\textcolor{accentcolor}{\arabic*.}, leftmargin=*, itemsep=0.6em]
+    \item \textbf{Shao, J.}, Lin, Y., Lohani, M. P., Miao, Y., and Luo, B., "Do LLM Agents Know How to Ground, Recover, and Assess? A Benchmark for Epistemic Competence in Information-Seeking Agents", \textit{arXiv e-prints}, arXiv:2509.22391, 2025.
+    \item \textbf{Shao, J.}, Lin, T., Luo, B., "Beyond Right to be Forgotten: Managing Heterogeneity Side Effects Through Strategic Incentives", \textit{ACM MobiHoc}, 2025.
+    \item Fan, T., ..., \textbf{Shao, J.}, et al., "Ten challenging problems in federated foundation models", \textit{IEEE Transactions on Knowledge and Data Engineering}, 2025.
+    \item Lu, S., \textbf{Shao, J.}$^{*}$, Luo, B., and Lin, T., "Morphagent: Empowering agents through self-evolving profiles and decentralized collaboration", \textit{ICML-MAS}, 2025. ($^{*}$Co-first authors.)
+    \item \textbf{Shao, J.}, Yuan, T., Lin, T., and Luo, B., "Cognitive Insights and Stable Coalition Matching for Fostering Multi-Agent Cooperation," \textit{arXiv preprint arXiv:2405.18044}, 2024.
+    \item \textbf{Shao, J.}, Lin, T., and Luo, B., "Federated Unlearning: a Perspective of Stability and Fairness", \textit{arXiv preprint arXiv:2402.01276}, 2024.
+    \item He, S., Tang, B., Zhang, B., \textbf{Shao, J.}, Ouyang, X., Nugraha, DN., Luo, B., "FedKit: Enabling Cross-Platform Federated Learning for Android and iOS", \textit{IEEE INFOCOM 2024-IEEE Conference on Computer Communications Workshops}, 2024.
+    \item Geng, J., Tang, B., Zhang, B., \textbf{Shao, J.}, Luo, B., "FedCampus: A Real-world Privacy-preserving Mobile Application for Smart Campus via Federated Learning \& Analytics", \textit{Proceedings of the Twenty-Fifth International Symposium on Theory}, 2024.
+
+
+\end{enumerate}
+\vspace{0.5em}
+
+% Projects Section
+\section*{\color{sectioncolor}Projects}
+    \subsubsection*{\color{itemcolor}MASArena: Benchmarking Framework for Multi-Agent Systems}
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
+        \item Led the design and implementation of the overall architecture for an open-source, modular benchmarking framework for single- and multi-agent systems.
+        \item Collaborated with Westlake University LINs-Lab to develop plug-and-play modules, built-in benchmarks, visual debugging, and easy agent/tool/dataset integration.
+        \item Designed framework to support academic experiment reproduction, agent comparison, and toolchain evaluation.
+        \item Open-source and actively maintained. Available at: \href{https://github.com/LINs-lab/MASArena}{\color{linkcolor}https://github.com/LINs-lab/MASArena}
+    \end{itemize}
+    \vspace{0.6em}
+    \subsubsection*{\color{itemcolor}FedKit: Enabling Cross-Platform Federated Learning for Android and iOS}
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
+        \item Developed FEDKIT, which pipelines Cross-Platform FL for Android and iOS development by enabling model conversion, hardware-accelerated training, and cross-platform model aggregation.
+        \item Implemented workflow supporting flexible federated learning operations (FLOps) in production, facilitating continuous model delivery and training.
+        \item Collaborated with Prof. Luo, DKU undergraduate students Sichang He (lead), Beilong Tang, and Boyan Zhang, as well as collaborators Xiaomin Ouyang (UCLA) and Daniel Nata (Flower).
+        \item Work accepted at IEEE INFOCOM 2024 Demo.
+    \end{itemize}
+    \vspace{0.6em}
+    \subsubsection*{\color{itemcolor}FedCampus: Privacy-preserving Mobile Application for Smart Campus}
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
+        \item Designed and implemented a real-world mobile application leveraging federated learning and differential privacy for smart campus services.
+        \item Deployed 100 customized smart watches for participants at DKU and developed FedCampus APP for Android and iOS.
+        \item Integrated privacy-preserving analytics to enable data-driven campus improvements without compromising individual user data.
+        \item Video demonstration available online showcasing the application's capabilities.
+    \end{itemize}
+    \vspace{0.6em}
+    \subsubsection*{\color{itemcolor}Edge-based Cross-device Federated Learning Prototypes}
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
+        \item Developed prototypes supporting Mobile and IoT devices operating at WiFi and USRP-based 4G/5G wireless networks.
+        \item Collaborated with Prof. Luo and students from CUHKSZ to implement cross-device federated learning solutions.
+        \item Focused on edge computing and distributed machine learning in heterogeneous network environments.
+    \end{itemize}
+\vspace{0.8em}
+
+% Teaching Section
+\section*{\color{sectioncolor}Teaching}
+    \subsubsection*{\color{itemcolor}Teaching Assistant}
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
+        \item ELEC3120: Computer Communication Networks (HKUST, Spring 2024)
+        \item ELEC3300: Introduction to Embedded Systems (HKUST, Fall 2024)
+        \item Vector Space Methods with Applications | ECE 586K (DKU, Spring 2025)
+    \end{itemize}
+\vspace{0.8em}
+
+% Patents Section
+\section*{\color{sectioncolor}Patents}
+\begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.4em]
+    \item B. Luo, \textbf{J. Shao}, Method and Apparatus for Online Parameter Selection in Minimizing the Total Cost of Federated Learning, CN202310485067.8, Apr. 2023, filed
+    \item B. Luo, \textbf{J. Shao}, Method and Apparatus for Online Client Sampling in Minimizing the Training time of Federated Learning, CN 202310484383.3, Apr. 2023, filed
+    \item B. Luo, \textbf{J. Shao}, J. Huang, Method and Apparatus for Frequent Items Mining Using Federated Analytics, CN202310365167.7, Mar. 2023, filed
+    \item B. Luo, \textbf{J. Shao}, J. Huang, Method and Apparatus for Frequent Data Mining Based on Hierarchical Federated Analytics, CN202310330791.3, Mar. 2023, filed
+\end{itemize}
+\vspace{0.8em}
+
+% % About Section
+% \section*{\color{sectioncolor}About}
+% \begin{flushleft}
+%     \color{graytext}
+%     I am a PhD student at the Hong Kong University of Science and Technology (HKUST), where I work on federated learning, distributed edge AI, and privacy-preserving machine learning. My research focuses on developing efficient and privacy-preserving algorithms for distributed machine learning systems.
+
+%     Prior to joining HKUST, I completed my bachelor's degree at The Chinese University of Hong Kong, Shenzhen, where I specialized in Computer Engineering. During my undergraduate studies, I developed a strong interest in machine learning and distributed systems.
+% \end{flushleft}
+% \vspace{1em}
+
+
+
+\end{document}

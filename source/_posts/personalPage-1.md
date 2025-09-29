@@ -17,9 +17,10 @@ Bachelor of Engineering in Electrical and Computer Engineer, Stream: *Computer E
 
 # Publications
 <ol>
+<li><b>Shao, J.</b>, Lin, Y., Lohani, M. P., Miao, Y., and <a href="https://luobing1008.github.io/">Luo, B.</a>, "Do LLM Agents Know How to Ground, Recover, and Assess? A Benchmark for Epistemic Competence in Information-Seeking Agents", <i>arXiv e-prints</i>, <a href="https://arxiv.org/abs/2509.22391">arXiv:2509.22391</a>, 2025.</li>
 <li><b>Shao, J.</b>, <a href="https://tlin-taolin.github.io/">Lin, T.</a>, <a href="https://xiaojin319.github.io/" >Xiaojin Zhang </a> <a href="https://seng.hkust.edu.hk/about/people/faculty/qiang-yang"> Qiang Yang</a>, and <a href="https://luobing1008.github.io/">Luo, B.</a>, "Beyond Right to be Forgotten: Managing Heterogeneity Side Effects Through Strategic Incentives", <i>ACM MobiHoc 2025</i>, 2025. (Accepted) 🎉</li>
-<li>Lu, S., <b>Shao, J.</b>, <a href="https://luobing1008.github.io/">Luo, B.</a>, and <a href="https://tlin-taolin.github.io/">Lin, T.</a>, "Morphagent: Empowering agents through self-evolving profiles and decentralized collaboration", <i>ICML-MAS</i>, 2025.</li>
-<li><b>Shao, J.</b>,Yuan, T., <a href="https://tlin-taolin.github.io/">Lin, T.</a>, <a href="https://ece.hkust.edu.hk/eexcao">Cao, X.</a>, and <a href="https://luobing1008.github.io/">Luo, B.</a>, Cognitive Insights and Stable Coalition Matching for Fostering Multi-Agent Cooperation, <i>arXiv e-prints</i>, arXiv:2405.18044.</li>
+<li>Lu, S.*, <b>Shao, J.</b>*, <a href="https://luobing1008.github.io/">Luo, B.</a>, and <a href="https://tlin-taolin.github.io/">Lin, T.</a>, "Morphagent: Empowering agents through self-evolving profiles and decentralized collaboration", <i>ICML-MAS</i>, 2025. (*Equal contribution)</li>
+<li><b>Shao, J.</b>,Yuan, T., <a href="https://tlin-taolin.github.io/">Lin, T.</a>, and <a href="https://luobing1008.github.io/">Luo, B.</a>, Cognitive Insights and Stable Coalition Matching for Fostering Multi-Agent Cooperation, <i>arXiv e-prints</i>, arXiv:2405.18044.</li>
 <li>Fan, T., Gu, H., Cao, X., Chan, C. S., Chen, Q., Chen, Y., Feng, Y., Gu, Y., Geng, J., Luo, B.</a>, Liu, S., Ong, W. K., Ren, C., <b>Shao, J.</b>, Sun, C., Tang, X., Tae, H. X., Tong, Y., Wei, S., Wu, F., Xi, W., Xu, M., Yang, H., Yang, X., Yan, J., Yu, H., Yu, H., Zhang, T., Zhang, Y., Zhang, X., Zheng, Z., Fan, L., and Yang, Q., "Ten challenging problems in federated foundation models", <i>IEEE Transactions on Knowledge and Data Engineering</i>, 2025.</li>
 <li>He, S., Tang, B., Zhang, B., <b>Shao, J.</b>, <a href="https://xmouyang.github.io/">Ouyang, X.</a>, Nugraha, D. N., and <a href="https://luobing1008.github.io/">Luo, B.</a>, "Fedkit: Enabling cross-platform federated learning for android and ios", in <i>IEEE INFOCOM 2024-IEEE conference on computer communications workshops (INFOCOM WKSHPS)</i>, 2024.</li>
 <li>Geng, J., Tang, B., Zhang, B., <b>Shao, J.</b>, and <a href="https://luobing1008.github.io/">Luo, B.</a>, "FedCampus: A Real-world Privacy-preserving Mobile Application for Smart Campus via Federated Learning & Analytics", in <i>Proceedings of the Twenty-Fifth International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing</i>, 2024.</li>
@@ -69,7 +70,9 @@ Bachelor of Engineering in Electrical and Computer Engineer, Stream: *Computer E
 
 ---
 # Teaching Assistant
-* ELEC3120 - Computer Communication Networks (HKUST, Spring 2024)
+* ELEC3120: Computer Communication Networks (HKUST, Spring 2024)
+* ELEC3300: Introduction to Embedded Systems (HKUST, Fall 2024)
+* Vector Space Methods with Applications | ECE 586K (DKU, Spring 2025)
 
 ---
 
