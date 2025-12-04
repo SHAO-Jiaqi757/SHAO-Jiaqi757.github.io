@@ -1,0 +1,213 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[UTF8, scheme=plain]{ctex} % Chinese support
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{fontawesome5} % For icons like Github, Linkedin, Mail
+\usepackage{tcolorbox} % For colored boxes
+\usepackage{parskip} % Better paragraph spacing
+
+% Define colors
+\definecolor{linkcolor}{RGB}{25,118,210} % Modern blue
+\definecolor{sectioncolor}{RGB}{99,102,241} % Indigo accent
+\definecolor{namecolor}{RGB}{15,23,42} % Very dark blue
+\definecolor{graytext}{RGB}{71,85,105} % Slate gray
+\definecolor{itemcolor}{RGB}{30,41,59} % Dark slate
+\definecolor{accentcolor}{RGB}{0,0,0} % 
+\definecolor{lightgray}{RGB}{241,245,249} % Light background
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=magenta,      
+    urlcolor=linkcolor,
+    citecolor=linkcolor,
+}
+
+% Suppress page numbers
+\pagenumbering{gobble}
+
+% Set Chinese fonts (ctex will auto-detect, but we can specify)
+% For macOS, common fonts: STSong, STHeiti, STKaiti, STFangsong
+% Or system fonts: PingFang SC, Hiragino Sans GB, etc.
+% Comment out if auto-detection works
+% \setCJKmainfont{STSong}[AutoFakeBold=true, AutoFakeSlant=true]
+
+% Section formatting
+\titleformat{\section}
+  {\Large\bfseries\color{sectioncolor}}
+  {\thesection}
+  {1em}
+  {\color{accentcolor}\rule[-0.3em]{0.5em}{0.4em}\hspace{0.5em}}
+
+\titleformat{\subsection}
+  {\large\bfseries\color{sectioncolor}}
+  {\thesubsection}
+  {1em}
+  {}
+
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\color{itemcolor}}
+  {\thesubsubsection}
+  {1em}
+  {}
+
+% Reduce spacing between items in lists
+\setlist[itemize]{noitemsep, topsep=0.3em, leftmargin=1.5em}
+\setlist[enumerate]{noitemsep, topsep=0.3em, leftmargin=1.5em}
+
+% Custom itemize style with colored bullets
+\renewcommand{\labelitemi}{\textcolor{accentcolor}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{accentcolor}{\textendash}}
+
+% Custom command for skills with colorbox
+\newcommand{\skills}[1]{%
+    \noindent\textit{\color{graytext}技能：}%
+    \begingroup
+    #1%
+    \endgroup
+}
+\newcommand{\skilltag}[1]{%
+    \setlength{\fboxsep}{3pt}%
+    \setlength{\fboxrule}{0.5pt}%
+    \colorbox{lightgray}{\color{itemcolor}\small\textbf{#1}}%
+    \hspace{0.3em}%
+}
+
+% Name and Contact Information
+\newcommand{\myName}{邵佳琪}
+\newcommand{\myInterests}{大语言模型智能体 \textbar{} 多智能体系统 \textbar{} 联邦学习}
+\newcommand{\myGithub}{https://github.com/SHAO-Jiaqi757}
+\newcommand{\myPersonalWebpage}{}
+\newcommand{\myEmail}{js1139@duke.edu}
+\newcommand{\myScholar}{https://scholar.google.com/citations?user=P8MtRXMAAAAJ\&hl=zh-CN}
+
+\begin{document}
+
+% Header Section
+\begin{center}
+    {\fontsize{28}{34}\selectfont\textbf{\color{namecolor}\myName}} \\ \vspace{0.3em}
+    {\color{graytext}\fontsize{12}{14}\selectfont\myInterests} \\ \vspace{0.4em}
+    \begin{tabular}{c c c c}
+        \faGithub\enspace \href{\myGithub}{\color{linkcolor}GitHub} &
+        \faGlobe\enspace \href{https://shao-jiaqi757.github.io/}{\color{linkcolor}个人主页} &
+        \faEnvelope\enspace \href{mailto:\myEmail}{\color{linkcolor}邮箱} &
+        \faGraduationCap\enspace \href{https://scholar.google.com/citations?user=P8MtRXMAAAAJ\&hl=zh-CN}{\color{linkcolor}Google Scholar}
+    \end{tabular}
+\end{center}
+\vspace{0.8em}
+
+% Add a subtle horizontal line
+\noindent\color{accentcolor}\rule{\textwidth}{0.5pt}
+\vspace{0.8em}
+
+% Education Section
+\section*{\color{sectioncolor}教育背景}
+    \subsubsection*{\color{itemcolor}香港科技大学}
+    \textit{\color{graytext}电子与计算机工程博士（PhD）} \hfill \color{accentcolor}\textbf{2023年秋季 – 至今} \\
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
+        \vspace{-1em}
+        \item \small{\color{graytext}导师：张薇教授（香港科技大学）（指导老师：罗冰教授（昆山杜克大学））}
+    \end{itemize}
+    \vspace{0.3em}
+    \subsubsection*{\color{itemcolor}香港中文大学（深圳）}
+    \textit{\color{graytext}电子与计算机工程学士 \small{\color{graytext}专业方向：计算机工程}} \hfill \color{accentcolor}\textbf{2019 – 2023}
+\vspace{0.8em}
+
+% Selected Research Projects Section
+\section*{\color{sectioncolor}部分重点研究项目}
+
+    \subsubsection*{1.\color{itemcolor}上下文折叠在智能体多轮交互中的应用}
+    \noindent\textbf{\color{sectioncolor}负责人} | 优化算法设计 \hfill \color{accentcolor}\textbf{进行中} \\
+    \skills{\skilltag{智能体强化学习} \skilltag{上下文折叠} \skilltag{多轮系统} \skilltag{算法设计}} 
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
+        \item 研究多轮智能体系统中的上下文折叠优化问题，以实现高效的长时程决策制定。 
+        \item 开发基于智能体强化学习算法的新型优化方法，学习稳定的上下文折叠和检索策略，提升任务性能并减少训练时间。
+    \end{itemize}
+    \vspace{0.5em}
+    \subsubsection*{2. \color{itemcolor}SeekBench：衡量大语言模型搜索智能体能力的标准化基准测试框架}
+    \noindent\textbf{\color{sectioncolor}负责人} | 框架设计与方法论 \hfill \color{accentcolor}\textbf{arXiv:2509.22391, 2025, 已提交并审稿中} \\
+    \skills{\skilltag{基准设计} \skilltag{评估方法论} \skilltag{定量分析} \skilltag{研究领导力}} 
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
+        \item 开发了评估大语言模型搜索智能体认知能力的标准化基准框架。主导设计了将智能体响应轨迹解构为功能类型和质量属性的注释模式。 
+        \item 定义了三个核心指标——\textit{推理可靠性}（Groundedness）、\textit{恢复性}（Recovery）和\textit{校准性}（Calibration）——建立了量化评估框架（RQI、ERF、CE），用于评估推理-证据整合、对低质量信息的适应以及基于证据的决策制定。
+    \end{itemize}
+    \vspace{0.5em}
+    \subsubsection*{3. \color{itemcolor}MorphAgent：自演化多智能体协作平台}
+    \noindent\textbf{\color{sectioncolor}共同第一作者} | 架构设计与系统实现 \hfill \color{accentcolor}\textbf{ICML-MAS, 2025, 已提交并审稿中} \\
+    \skills{\skilltag{系统架构} \skilltag{多智能体系统} \skilltag{自适应算法}} 
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
+        \item 设计了去中心化、自适应的协作平台，使基于大语言模型的智能体能够在没有预定义结构的情况下动态演化角色。开发了两阶段框架（预热阶段角色优化和持续任务执行），使用核心指标（RCS、RDS、TRAS）量化角色演化。在代码生成、推理和数学基准测试中，在任务性能、领域迁移和故障鲁棒性方面展示了显著改进。
+    \end{itemize}
+    \vspace{0.5em}
+    \subsubsection*{4. \color{itemcolor}昆山杜克大学科研助理}
+    \noindent\textbf{\color{sectioncolor}研究导师}  \hfill \color{accentcolor}\textbf{2025年2月 – 至今} \\
+    \skills{\skilltag{研究指导} \skilltag{RAG与记忆系统} \skilltag{人机协作}} 
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
+        \item 领导并指导10余名本科生开展以大语言模型叙事设计和交互式故事系统为核心的研究项目。指导学生完成完整的研究流程：项目启动、代码实现、用户实验和论文撰写。相关论文已提交至CHI 2026并进入第二轮评审。
+        \begin{enumerate}[itemsep=0.2em, leftmargin=1.5em]
+            \item \textbf{研究方向1：} 具备长期记忆的大语言模型NPC角色——研究多轮交互中角色行为一致性和适应性。设计语义检索（检索增强生成，RAG）和记忆系统，使NPC能够在多轮对话中保持行为连续性和叙事一致性。
+            \item \textbf{研究方向2：} 基于大语言模型的叙事系统设计——开发融合人工编写结构与生成式AI的混合框架，构建运行时自适应叙事引擎，通过玩家输入、作者意图和模型生成之间的语义对齐机制动态调整叙事行为。实现反馈驱动的长期演化优化框架，使系统能够在多轮交互和跨场景中自我演化，提高故事连贯性。
+        \end{enumerate}
+    \end{itemize}
+    \vspace{0.5em}
+    \subsubsection*{5. \color{itemcolor}MASArena：多智能体系统基准测试框架}
+    \noindent\textbf{\color{sectioncolor}主要负责人} | 架构与框架设计 \hfill \color{accentcolor}\textbf{2025年5月 – 2025年7月} \\
+    \skills{\skilltag{框架架构} \skilltag{实验编排} \skilltag{开源开发}} 
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
+        \item MASArena是一个开源、模块化的基准测试框架，用于单智能体和多智能体系统中的标准化实验、比较和可视化分析，与西湖大学LINs-Lab联合开发。
+        \item \textbf{主要职责与成就：}
+        \begin{enumerate}[itemsep=0.2em, leftmargin=1.5em]
+            \item 领导并开发了整体框架设计和实现，开发了支持智能体、工具和数据集即插即用集成的可扩展模块化架构。 
+            \item 开发了可视化和实时监控模块，以及全面的评估和可重现性管道。
+            \item 我的详细代码贡献：\href{https://github.com/LINs-lab/MASArena/graphs/contributors}{\color{linkcolor}https://github.com/LINs-lab/MASArena/graphs/contributors}
+        \end{enumerate}
+    \end{itemize}
+    \vspace{0.5em}
+  
+\vspace{0.8em}
+% Projects Section
+\section*{\color{sectioncolor}其他项目}
+    \subsubsection*{\color{itemcolor}FedKit：支持Android和iOS的跨平台联邦学习}
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
+        \item 开发了FedKit，通过支持模型转换、硬件加速训练和跨平台模型聚合，为Android和iOS开发提供跨平台联邦学习流水线。
+        \item 实现了支持生产环境中灵活联邦学习操作（FLOps）的工作流，促进持续模型交付和训练。
+        \item 与罗冰教授、昆山杜克大学本科生以及合作者欧阳晓敏（HKUST）和Daniel Nata（Flower AI）合作。
+        \item 工作被IEEE INFOCOM 2024 Demo接收。
+    \end{itemize}
+    \vspace{0.6em}
+    \subsubsection*{\color{itemcolor}FedCampus：智慧校园隐私保护移动应用}
+    \begin{itemize}[leftmargin=*, label=\textcolor{accHKUSTlor}{\AIxtbullet}]
+        \item 设计并实现了一个利用联邦学习和差分隐私的智慧校园服务真实移动应用。
+        \item 在昆山杜克大学为参与者部署了100个定制智能手表，并开发了Android和iOS版本的FedCampus应用。
+        \item 集成了隐私保护分析功能，在不损害个人用户数据的情况下实现数据驱动的校园改进。
+        \item 在线提供视频演示，展示应用功能。
+    \end{itemize}
+    \vspace{0.6em}
+    \subsubsection*{\color{itemcolor}基于边缘的跨设备联邦学习原型}
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
+        \item 开发了支持在WiFi和基于USRP的4G/5G无线网络上运行的移动和物联网设备原型。
+        \item 与罗冰教授和香港中文大学（深圳）的学生合作，实现跨设备联邦学习解决方案。
+        \item 专注于异构网络环境中的边缘计算和分布式机器学习。
+    \end{itemize}
+\vspace{0.8em}
+
+% Teaching Section
+\section*{\color{sectioncolor}教学经历}
+    \subsubsection*{\color{itemcolor}助教}
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
+        \item ELEC3120：计算机通信网络（香港科技大学，2024年春季）
+        \item ELEC3300：嵌入式系统导论（香港科技大学，2024年秋季）
+        \item 向量空间方法与应用 | ECE 586K（昆山杜克大学，2025年春季）
+    \end{itemize}
+\vspace{0.8em}
+
+\end{document}
+
