@@ -79,10 +79,15 @@ Bachelor of Engineering in Electrical and Computer Engineer, Stream: *Computer E
 </div>
 
 ---
+# Talks & Invited Seminars
+* Vibe Coding Seminar, Duke Kunshan University (DKU), April 2025. Invited seminar.
+
+---
 # Teaching Assistant
 * ELEC3120: Computer Communication Networks (HKUST, Spring 2024)
 * ELEC3300: Introduction to Embedded Systems (HKUST, Fall 2024)
 * Vector Space Methods with Applications | ECE 586K (DKU, Spring 2025)
+* Advanced Topics in Electrical and Computer Engineering | ECE 590K (DKU)
 
 ---
 
