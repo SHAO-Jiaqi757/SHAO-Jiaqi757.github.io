@@ -5,13 +5,48 @@ tags:
 academia: true
 ---
 
+**PhD, HKUST | Expected Graduation: June 2027**  
+**Target: LLM Agent / RL / Agent Systems**
+
+## Top Highlights
+- **SeekBench** — benchmark for epistemic competence in search agents. **ICLR 2026**.
+- **FoldAct** — long-horizon optimization for LLM agents with up to **5.19x** training speedup. [GitHub](https://github.com/SHAO-Jiaqi757/FoldAct)
+- **ByteDance system** — controllable long-running agent system with autonomous execution, iterative refinement, and human interruption.
+
+----
+
 # Education 
 **Hong Kong University of Science and Technology** (2023 Fall -)
 Doctor of Philosophy (PhD) in Electronic and Computer Engineering
-> My supervior: [Prof. Wei Zhang (HKUST)](https://seng.hkust.edu.hk/about/people/faculty/wei-zhang) (Mentor: [Prof. Bing Luo (DKU)](https://luobing1008.github.io/))
+> My supervisor: [Prof. Wei Zhang (HKUST)](https://seng.hkust.edu.hk/about/people/faculty/wei-zhang) (Mentor: [Prof. Bing Luo (DKU)](https://luobing1008.github.io/))
 
 **The Chinese University of Hong Kong, Shenzhen** (2019 — 2023)
 Bachelor of Engineering in Electrical and Computer Engineer, Stream: *Computer Engineering*
+
+----
+
+# Representative Research
+## SeekBench: Benchmarking Epistemic Competence in LLM Search Agents
+* **First Author** | Benchmark Design & Evaluation Methodology | **ICLR 2026**
+* Developed **SeekBench**, a standardized benchmark for evaluating the epistemic competence of LLM search agents beyond end-task accuracy.
+* Defined a trajectory-level evaluation paradigm for how agents gather, revise, and calibrate evidence during search.
+* Introduced three core metrics: **Groundedness**, **Recovery**, and **Calibration**. [GitHub](https://github.com/SHAO-Jiaqi757/SeekBench)
+
+## FoldAct: Efficient and Stable Context Folding for Long-Horizon Search Agents
+* **First Author** | Algorithm Design | **arXiv preprint, 2025**
+* Proposed **FoldAct**, a context-folding algorithm for long-horizon LLM agents under multi-turn reinforcement learning.
+* Developed a structured training strategy that stabilizes summary-policy learning and improves optimization efficiency.
+* Achieved up to **5.19x** training speedup on complex search-agent tasks while maintaining strong long-horizon decision quality. [GitHub](https://github.com/SHAO-Jiaqi757/FoldAct)
+
+## MorphAgent: Self-Evolving Multi-Agent Collaboration Platform
+* **Co-first Author** | System Architecture & Adaptive Collaboration | **ICML-MAS 2025**
+* Designed a decentralized collaboration framework in which LLM agents dynamically evolve roles without predefined structures.
+* Demonstrated improved task performance, transferability, and robustness across reasoning and coding benchmarks.
+
+## Beyond Right to be Forgotten: Managing Heterogeneity Side Effects Through Strategic Incentives
+* **First Author** | Incentive Mechanism Design & Theoretical Analysis | **ACM MobiHoc 2025**
+* Studied heterogeneity side effects in federated unlearning under non-IID data.
+* Developed a Stackelberg-game-based incentive mechanism to retain crucial clients and improve stability and efficiency.
 
 ----
 
