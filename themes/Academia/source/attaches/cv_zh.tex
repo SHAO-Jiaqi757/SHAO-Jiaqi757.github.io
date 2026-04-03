@@ -83,10 +83,11 @@
 
 % Name and Contact Information
 \newcommand{\myName}{邵佳琪}
-\newcommand{\myInterests}{长程大语言模型智能体 \textbar{} 智能体评测 \textbar{} 可靠自主系统}
+\newcommand{\myStatus}{PhD, HKUST \textbar{} Expected Graduation: June 2027}
+\newcommand{\myTarget}{Target: LLM Agent / RL / Agent Systems}
 \newcommand{\myGithub}{https://github.com/SHAO-Jiaqi757}
 \newcommand{\myPersonalWebpage}{}
-\newcommand{\myEmail}{js1139@duke.edu}
+\newcommand{\myEmail}{jshaoaj@connect.ust.hk}
 \newcommand{\myScholar}{https://scholar.google.com/citations?user=P8MtRXMAAAAJ\&hl=zh-CN}
 
 \begin{document}
@@ -94,12 +95,12 @@
 % Header Section
 \begin{center}
     {\fontsize{28}{34}\selectfont\textbf{\color{namecolor}\myName}} \\ \vspace{0.3em}
-    {\color{graytext}\fontsize{12}{14}\selectfont\myInterests} \\ \vspace{0.4em}
+    {\color{graytext}\fontsize{11}{13}\selectfont\myStatus} \\ \vspace{0.15em}
+    {\color{graytext}\fontsize{11}{13}\selectfont\myTarget} \\ \vspace{0.4em}
     \begin{tabular}{c c c c c}
         \faGithub\enspace \href{\myGithub}{\color{linkcolor}GitHub} &
         \faGlobe\enspace \href{https://shao-jiaqi757.github.io/}{\color{linkcolor}个人主页} &
-        % \faEnvelope\enspace \href{mailto:\myEmail}{\color{linkcolor}邮箱} &
-        \faEnvelope\enspace {\color{linkcolor}jshaoaj@connect.ust.hk} &
+        \faEnvelope\enspace \href{mailto:\myEmail}{\color{linkcolor}\myEmail} &
         % \faPhone\enspace {\color{linkcolor}18336708130} &
         \faGraduationCap\enspace \href{https://scholar.google.com/citations?user=P8MtRXMAAAAJ\&hl=zh-CN}{\color{linkcolor}Google Scholar}
     \end{tabular}
@@ -131,7 +132,7 @@
 % Experience Section
 \section*{\color{sectioncolor}实习经历}
     \subsubsection*{\color{itemcolor}字节跳动｜算法实习生（长程智能体系统）}
-    \noindent\textbf{\color{sectioncolor}系统设计与实现} \hfill \color{accentcolor}\textbf{2026年1月 – 至今} \\
+    \noindent\textbf{\color{sectioncolor}系统设计与实现} \hfill \color{accentcolor}\textbf{2026年1月 – 至今}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
         \item 端到端负责长程智能体系统的设计与落地，面向复杂任务中的持续执行、自迭代优化与人工介入需求。
         \item 构建统一运行框架，将持续执行、过程评估与迭代优化闭环联结起来，支撑长时程智能体行为的稳定运行。
@@ -143,18 +144,8 @@
 % Selected Research Projects Section
 \section*{\color{sectioncolor}代表性研究成果}
 
-    \subsubsection*{1.\color{itemcolor}FoldAct：面向长程大语言模型智能体的稳定优化方法}
-    \noindent\textbf{\color{sectioncolor}负责人} | 优化算法设计 \hfill \color{accentcolor}\textbf{arXiv 预印本, 2025} \\
-    \skills{\skilltag{智能体强化学习} \skilltag{长程优化} \skilltag{上下文折叠}} 
-    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
-        \item 提出 \textbf{FoldAct} 上下文折叠算法，针对多轮强化学习中摘要策略非平稳带来的训练不稳定问题开展研究。
-        \item 通过结构化训练设计提升多轮场景下折叠策略学习的稳定性与训练效率。
-        \item 在复杂搜索智能体任务上实现最高 $\textbf{5.19\times}$ 的训练加速，同时保持良好的长程决策质量。
-    \end{itemize}
-
-    \vspace{0.5em}
-    \subsubsection*{2. \color{itemcolor}SeekBench：面向搜索智能体认知能力的标准化评测基准}
-    \noindent\textbf{\color{sectioncolor}负责人} | 基准设计与评估方法论 \hfill \color{accentcolor}\textbf{ICLR 2026（已接收）} \\
+    \subsubsection*{1. \color{itemcolor}SeekBench：面向搜索智能体认知能力的标准化评测基准}
+    \noindent\textbf{\color{sectioncolor}第一作者} | 基准设计与评估方法论 \hfill \color{accentcolor}\textbf{ICLR 2026} \\
     \skills{\skilltag{基准设计} \skilltag{评估方法论} \skilltag{轨迹级评测}} 
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
         \item 开发 \textbf{SeekBench} 标准化评测基准，用于系统评估搜索型大语言模型智能体的认知能力，而不仅仅停留在最终任务准确率层面。
@@ -162,7 +153,40 @@
         \item 定义三个核心指标——\textit{推理可靠性}（Groundedness）、\textit{恢复性}（Recovery）和\textit{校准性}（Calibration）——量化评估证据整合、低质量信息恢复与基于证据的决策能力。
     \end{itemize}
     \vspace{0.5em}
-    \subsubsection*{3. \color{itemcolor}Beyond Right to be Forgotten: Managing Heterogeneity Side Effects Through Strategic Incentives}
+    \subsubsection*{2. \color{itemcolor}FoldAct：面向长程大语言模型智能体的稳定优化方法}
+    \noindent\textbf{\color{sectioncolor}第一作者} | 优化算法设计 \hfill \color{accentcolor}\textbf{arXiv, 2025} \\
+    \skills{\skilltag{智能体强化学习} \skilltag{长程优化} \skilltag{上下文折叠}} 
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
+        \item 提出 \textbf{FoldAct} 上下文折叠算法，针对多轮强化学习中摘要策略非平稳带来的训练不稳定问题开展研究。
+        \item 通过结构化训练设计提升多轮场景下折叠策略学习的稳定性与训练效率。
+        \item 在复杂搜索智能体任务上实现5.19倍的训练加速，同时保持良好的长程决策质量。
+    \end{itemize}
+    \vspace{0.5em}
+    \subsubsection*{3. \color{itemcolor}MorphAgent：自演化多智能体协作算法}
+    \noindent\textbf{\color{sectioncolor}共同第一作者} | 系统架构与自适应协作 \hfill \color{accentcolor}\textbf{ICML-MAS, 2025} \\
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
+        \item 设计去中心化、自适应的协作机制，使大语言模型智能体能够在没有预定义结构的情况下动态演化角色。
+        \item 构建自演化协作框架，在推理与代码生成基准上提升任务表现、迁移能力与鲁棒性。
+    \end{itemize}
+    \vspace{0.5em}
+    \subsubsection*{4. \color{itemcolor}昆山杜克大学科研助理}
+    \noindent\textbf{\color{sectioncolor}研究指导}  \hfill \color{accentcolor}\textbf{2025年2月 – 2026年1月}
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
+        \item 搭建学生科研推进机制，覆盖选题设计、系统实现、实验组织与论文写作，并指导 \textbf{10余名本科生} 开展大语言模型叙事系统、记忆机制与人机协作相关研究。
+        \item 组织与 Duke 相关合作伙伴的交流展示活动，包括项目汇报与论坛展出，推动跨机构合作交流与团队协同。
+    \end{itemize}
+    \vspace{0.5em}
+    \subsubsection*{5. \color{itemcolor}MASArena：多智能体系统基准测试框架}
+    \noindent\textbf{\color{sectioncolor}主要负责人} | 框架架构设计 \hfill \color{accentcolor}\textbf{2025年5月 – 2025年7月}
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
+        \item 主导开源基准测试框架的架构设计与实现，用于单智能体和多智能体系统的标准化实验、比较与可视化分析。
+        \item 构建可复用的评测基础设施，通过可扩展实验管理与可视分析机制提升不同智能体、工具和数据集上的评测可重现性与可解释性。\href{https://github.com/LINs-lab/MASArena/graphs/contributors}{\color{linkcolor}[代码贡献]}
+    \end{itemize}
+    \vspace{0.5em}
+
+% Other Research Section
+\section*{\color{sectioncolor}其他研究 \& 项目}
+    \subsubsection*{\color{itemcolor}Beyond Right to be Forgotten: Managing Heterogeneity Side Effects Through Strategic Incentives}
     \noindent\textbf{\color{sectioncolor}第一作者} | 激励机制设计与理论分析 \hfill \color{accentcolor}\textbf{ACM MobiHoc 2025} \\
     \skills{\skilltag{联邦遗忘} \skilltag{激励机制设计} \skilltag{博弈论} \skilltag{理论分析}} 
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
@@ -170,35 +194,10 @@
         \item 构建刻画异质性影响的理论框架，并将联邦遗忘建模为服务器与客户端之间的 Stackelberg 博弈，通过支付激励保留关键客户端；方法可将全局稳定性提升至多 6.23\%，将最差客户端退化降低 10.05\%，并较完全重训练获得最高 38.6\% 的运行效率提升。
     \end{itemize}
     \vspace{0.5em}
-    \subsubsection*{4. \color{itemcolor}MorphAgent：自演化多智能体协作平台}
-    \noindent\textbf{\color{sectioncolor}共同第一作者} | 系统架构与自适应协作 \hfill \color{accentcolor}\textbf{ICML-MAS, 2025} \\
-    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
-        \item 设计去中心化、自适应的协作机制，使大语言模型智能体能够在没有预定义结构的情况下动态演化角色。
-        \item 构建自演化协作框架，在推理与代码生成基准上提升任务表现、迁移能力与鲁棒性。
-    \end{itemize}
-    \vspace{0.5em}
-    \subsubsection*{5. \color{itemcolor}昆山杜克大学科研助理}
-    \noindent\textbf{\color{sectioncolor}研究指导}  \hfill \color{accentcolor}\textbf{2025年2月 – 2026年1月} \\
-    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
-        \item 搭建学生科研推进机制，覆盖选题设计、系统实现、实验组织与论文写作，并指导 \textbf{10余名本科生} 开展大语言模型叙事系统、记忆机制与人机协作相关研究。
-        \item 组织与 Duke 相关合作伙伴的交流展示活动，包括项目汇报与论坛展出，推动跨机构合作交流与团队协同。
-    \end{itemize}
-    \vspace{0.5em}
-    \subsubsection*{6. \color{itemcolor}MASArena：多智能体系统基准测试框架}
-    \noindent\textbf{\color{sectioncolor}主要负责人} | 框架架构设计 \hfill \color{accentcolor}\textbf{2025年5月 – 2025年7月} \\
-    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
-        \item 主导开源基准测试框架的架构设计与实现，用于单智能体和多智能体系统的标准化实验、比较与可视化分析。
-        \item 构建可复用的评测基础设施，通过可扩展实验管理与可视分析机制提升不同智能体、工具和数据集上的评测可重现性与可解释性。\href{https://github.com/LINs-lab/MASArena/graphs/contributors}{\color{linkcolor}[代码贡献]}
-    \end{itemize}
-    \vspace{0.5em}
-  
-% Supporting Projects Section
-\section*{\color{sectioncolor}支撑项目}
     \subsubsection*{\color{itemcolor}FedKit：支持 Android 和 iOS 的跨平台联邦学习}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
         \item 开发跨平台联邦学习流水线，覆盖模型转换、硬件加速训练与端侧聚合，相关工作被 \textbf{IEEE INFOCOM 2024 Demo} 接收。
     \end{itemize}
-    \vspace{0.4em}
     \subsubsection*{\color{itemcolor}FedCampus：智慧校园隐私保护移动应用}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
         \item 构建融合联邦学习与差分隐私的真实移动应用，并在昆山杜克大学完成 \textbf{100} 个定制智能手表及 Android/iOS 客户端部署。

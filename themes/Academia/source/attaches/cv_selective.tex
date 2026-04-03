@@ -5,7 +5,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage[margin=0.75in]{geometry}
+\usepackage[margin=0.6in]{geometry}
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{titlesec}
@@ -42,7 +42,7 @@
 
 % Section formatting
 \titleformat{\section}
-  {\Large\bfseries\color{sectioncolor}}
+  {\large\bfseries\color{sectioncolor}}
   {\thesection}
   {1em}
   {\color{accentcolor}\rule[-0.3em]{0.5em}{0.4em}\hspace{0.5em}}
@@ -60,8 +60,8 @@
   {}
 
 % Reduce spacing between items in lists
-\setlist[itemize]{noitemsep, topsep=0.3em, leftmargin=1.5em}
-\setlist[enumerate]{noitemsep, topsep=0.3em, leftmargin=1.5em}
+\setlist[itemize]{noitemsep, topsep=0.15em, leftmargin=1.35em}
+\setlist[enumerate]{noitemsep, topsep=0.15em, leftmargin=1.35em}
 
 % Custom itemize style with colored bullets
 \renewcommand{\labelitemi}{\textcolor{accentcolor}{\textbullet}}
@@ -69,18 +69,20 @@
 
 % Name and Contact Information
 \newcommand{\myName}{Jiaqi Shao}
-\newcommand{\myInterests}{Long-horizon LLM Agents \textbar{} Agent Evaluation \textbar{} Reliable Autonomous Systems}
+\newcommand{\myStatus}{PhD, HKUST \textbar{} Expected Graduation: June 2027}
+\newcommand{\myTarget}{Target: LLM Agent / RL / Agent Systems}
 \newcommand{\myGithub}{https://github.com/SHAO-Jiaqi757} % Replace with actual GitHub link
 \newcommand{\myPersonalWebpage}{} % Replace with actual personal webpage link
-\newcommand{\myEmail}{js1139@duke.edu} % Replace with actual email
+\newcommand{\myEmail}{jshaoaj@connect.ust.hk}
 \newcommand{\myScholar}{https://scholar.google.com/citations?user=P8MtRXMAAAAJ&hl=zh-CN}
 
 \begin{document}
 
 % Header Section
 \begin{center}
-    {\fontsize{28}{34}\selectfont\textbf{\color{namecolor}\myName}} \\ \vspace{0.3em}
-    {\color{graytext}\fontsize{12}{14}\selectfont\myInterests} \\ \vspace{0.4em}
+    {\fontsize{24}{28}\selectfont\textbf{\color{namecolor}\myName}} \\ \vspace{0.1em}
+    {\color{graytext}\fontsize{9.5}{11}\selectfont\myStatus} \\ \vspace{0.03em}
+    {\color{graytext}\fontsize{9.5}{11}\selectfont\myTarget} \\ \vspace{0.15em}
     \begin{tabular}{c c c c}
         \faGithub\enspace \href{\myGithub}{\color{linkcolor}GitHub} &
         \faGlobe\enspace \href{https://shao-jiaqi757.github.io/}{\color{linkcolor}Personal Webpage} &
@@ -88,11 +90,11 @@
         \faGraduationCap\enspace \href{https://scholar.google.com/citations?user=P8MtRXMAAAAJ\&hl=zh-CN}{\color{linkcolor}Google Scholar}
     \end{tabular}
 \end{center}
-\vspace{0.8em}
+\vspace{0.25em}
 
 % Add a subtle horizontal line
 \noindent\color{accentcolor}\rule{\textwidth}{0.5pt}
-\vspace{0.8em}
+\vspace{0.3em}
 
 % Navigation (Optional in PDF, more for web - but can be kept for structure)
 % \begin{center}
@@ -108,29 +110,29 @@
 % Education Section
 \section*{\color{sectioncolor}Education}
     \subsubsection*{\color{itemcolor}Hong Kong University of Science and Technology}
-    \textit{\color{graytext}Doctor of Philosophy (PhD) in Electronic and Computer Engineering} \hfill \color{accentcolor}\textbf{2023 Fall – Present} \\
+    \textit{\color{graytext}Doctor of Philosophy (PhD) in Electronic and Computer Engineering} \hfill \color{accentcolor}\textbf{2023 Fall --- Present}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
         \vspace{-1em}
         \item \small{\color{graytext}Supervisor: Prof. Wei Zhang (HKUST) (Mentor: Prof. Bing Luo (DKU))}
     \end{itemize}
     \vspace{0.3em}
     \subsubsection*{\color{itemcolor}The Chinese University of Hong Kong, Shenzhen}
-    \textit{\color{graytext}Bachelor of Engineering in Electrical and Computer Engineer} \hfill \color{accentcolor}\textbf{2019 – 2023} \\
+    \textit{\color{graytext}Bachelor of Engineering in Electrical and Computer Engineer} \hfill \color{accentcolor}\textbf{2019 --- 2023}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}]
         \vspace{-1em}
         \item \small{\color{graytext}Stream: Computer Engineering}
     \end{itemize}
-\vspace{0.8em}
+\vspace{0.45em}
 
 % Research Focus Section
 \section*{\color{sectioncolor}Research Focus}
 \noindent Developing \textbf{long-horizon LLM agents} from three complementary perspectives: \textbf{algorithms} for stable multi-turn optimization, \textbf{evaluation} for epistemic competence and reliability, and \textbf{systems} for controllable autonomous execution in real-world settings.
-\vspace{0.8em}
+\vspace{0.35em}
 
 % Experience Section
 \section*{\color{sectioncolor}Experience}
     \subsubsection*{\color{itemcolor}ByteDance | Algorithm Intern (Long-running Agent Systems)}
-    \noindent\textbf{\color{sectioncolor}System Design \& Implementation} \hfill \color{accentcolor}\textbf{Jan. 2026 – Present} \\
+    \noindent\textbf{\color{sectioncolor}System Design \& Implementation} \hfill \color{accentcolor}\textbf{Jan. 2026 -- Present}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
         \item Owned the end-to-end delivery of a long-running agent system for sustained execution, iterative refinement, and human-in-the-loop intervention.
         \item Developed a unified framework that connected sustained execution, process evaluation, and iterative improvement for long-horizon agent behavior.
@@ -142,56 +144,57 @@
 % Representative Research Section
 \section*{\color{sectioncolor}Representative Research}
 
-    \subsubsection*{\color{itemcolor}FoldAct: FoldAct: Efficient and Stable Context Folding for Long-Horizon Search Agents}
-    \noindent\textbf{\color{sectioncolor}Lead} | Algorithm Design \hfill \color{accentcolor}\textbf{arXiv preprint, 2025} \\
-    \noindent\textit{\color{graytext}Skills:} \textbf{Agentic RL} | \textbf{Long-horizon Optimization} | \textbf{Context Folding} \\
-    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
-        \item Proposed \textbf{FoldAct}, a context-folding algorithm for long-horizon LLM agents, addressing instability caused by non-stationary summary policies in multi-turn reinforcement learning.
-        \item Developed a structured training strategy that stabilizes summary-policy learning and improves optimization efficiency in multi-turn settings.
-        \item Achieved up to \textbf{5.19$\times$} training speedup on complex search-agent tasks while maintaining strong long-horizon decision quality.
-    \end{itemize}
-    \vspace{0.5em}
     \subsubsection*{\color{itemcolor}SeekBench: Benchmarking Epistemic Competence in LLM Search Agents}
-    \noindent\textbf{\color{sectioncolor}Lead} | Benchmark Design \& Evaluation Methodology \hfill \color{accentcolor}\textbf{ICLR 2026 (Accepted)} \\
-    \noindent\textit{\color{graytext}Skills:} \textbf{Benchmark Design} | \textbf{Evaluation Methodology} | \textbf{Research Leadership} \\
+    \noindent\textbf{\color{sectioncolor}First Author} | Benchmark Design \& Evaluation Methodology \hfill \color{accentcolor}\textbf{ICLR 2026} \\
+    \noindent\textit{\color{graytext}Skills:} \textbf{Benchmark Design} | \textbf{Evaluation Methodology} | \textbf{Research Leadership}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
         \item Developed \textbf{SeekBench}, a standardized benchmark for evaluating the epistemic competence of LLM search agents and exposing failures beyond task accuracy alone.
         \item Defined a trajectory-level evaluation paradigm that analyzes how agents gather, revise, and calibrate evidence throughout the search process.
         \item Defined three core metrics—\textit{Groundedness}, \textit{Recovery}, and \textit{Calibration}—to quantify evidence integration, adaptation to low-quality information, and evidence-aware decision-making.
     \end{itemize}
-    \vspace{0.5em}
-    \subsubsection*{\color{itemcolor}Beyond Right to be Forgotten: Managing Heterogeneity Side Effects Through Strategic Incentives}
-    \noindent\textbf{\color{sectioncolor}First Author} | Incentive Mechanism Design \& Theoretical Analysis \hfill \color{accentcolor}\textbf{ACM MobiHoc 2025} \\
-    \noindent\textit{\color{graytext}Skills:} \textbf{Federated Unlearning} | \textbf{Incentive Mechanism Design} | \textbf{Game Theory} | \textbf{Theoretical Analysis} \\
+    \vspace{0.3em}
+    \subsubsection*{\color{itemcolor}FoldAct: Efficient and Stable Context Folding for Long-Horizon Search Agents}
+    \noindent\textbf{\color{sectioncolor}First Author} | Algorithm Design \hfill \color{accentcolor}\textbf{arXiv preprint, 2025} \\
+    \noindent\textit{\color{graytext}Skills:} \textbf{Agentic RL} | \textbf{Long-horizon Optimization} | \textbf{Context Folding}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
-        \item Studied heterogeneity side effects in federated unlearning under non-IID data, where removing a client can disproportionately degrade similarly distributed remaining clients and destabilize participation incentives.
-        \item Developed a theoretical framework and a Stackelberg-game-based payment mechanism to retain crucial clients, improving global stability by up to 6.23\%, reducing worst-case client degradation by 10.05\%, and achieving up to 38.6\% runtime efficiency over full retraining.
+        \item Proposed \textbf{FoldAct}, a context-folding algorithm for long-horizon LLM agents, addressing instability caused by non-stationary summary policies in multi-turn reinforcement learning.
+        \item Developed a structured training strategy that stabilizes summary-policy learning and improves optimization efficiency in multi-turn settings.
+        \item Achieved up to 5.19$\times$ training speedup on search-agent tasks while maintaining strong long-horizon decision quality.
     \end{itemize}
-    \vspace{0.5em}
+    \vspace{0.3em}
     \subsubsection*{\color{itemcolor}MorphAgent: Self-Evolving Multi-Agent Collaboration Platform}
-    \noindent\textbf{\color{sectioncolor}Co-First Author} | System Architecture \& Adaptive Collaboration \hfill \color{accentcolor}\textbf{ICML-MAS, 2025} \\
+    \noindent\textbf{\color{sectioncolor}Co-first Author} | System Architecture \& Adaptive Collaboration \hfill \color{accentcolor}\textbf{ICML-MAS, 2025}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
         \item Designed a decentralized collaboration framework in which LLM agents dynamically evolve roles without predefined structures.
         \item Established a self-evolving collaboration mechanism that improved task performance, transferability, and robustness across reasoning and coding benchmarks.
     \end{itemize}
-    \vspace{0.5em}
+    \vspace{0.3em}
     \subsubsection*{\color{itemcolor}Duke Kunshan University}
-    \noindent\textbf{\color{sectioncolor}Research Mentor} \hfill \color{accentcolor}\textbf{Feb. 2025 – Present} \\
+    \noindent\textbf{\color{sectioncolor}Research Mentor} \hfill \color{accentcolor}\textbf{Feb. 2025 -- Jan. 2026}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
         \item Coordinated a student research pipeline spanning project scoping, implementation, experiments, and paper writing, while mentoring \textbf{10+ undergraduate students} on LLM-based narrative systems, memory, and human-AI collaboration.
         \item Organized collaborative exchange activities with Duke-related partners, including project presentation and forum-style exhibition, strengthening cross-institution communication and early team coordination.
     \end{itemize}
-    \vspace{0.5em}
+    \vspace{0.3em}
     \subsubsection*{\color{itemcolor}MASArena: Benchmarking Framework for Multi-Agent Systems}
-    \noindent\textbf{\color{sectioncolor}Principal Lead} | Framework Architecture \hfill \color{accentcolor}\textbf{May 2025 – July 2025} \\
+    \noindent\textbf{\color{sectioncolor}Principal Lead} | Framework Architecture \hfill \color{accentcolor}\textbf{May 2025 -- July 2025}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
         \item Led the architecture and implementation of an open-source benchmarking framework for standardized experimentation and visual analytics in single-agent and multi-agent systems.
         \item Established reusable evaluation infrastructure for agents, tools, and datasets through extensible experiment management and visual analysis, improving reproducibility and interpretability. \href{https://github.com/LINs-lab/MASArena/graphs/contributors}{\color{linkcolor}[Code contributions]}
     \end{itemize}
-    \vspace{0.5em}
+    \vspace{0.35em}
+
+% Other Research Section
+\section*{\color{sectioncolor}Other Research \& Projects}
+    \subsubsection*{\color{itemcolor}Beyond Right to be Forgotten: Managing Heterogeneity Side Effects Through Strategic Incentives}
+    \noindent\textbf{\color{sectioncolor}First Author} | Incentive Mechanism Design \& Theoretical Analysis \hfill \color{accentcolor}\textbf{ACM MobiHoc 2025} \\
+    \noindent\textit{\color{graytext}Skills:} \textbf{Federated Unlearning} | \textbf{Incentive Mechanism Design} | \textbf{Game Theory} | \textbf{Theoretical Analysis}
+    \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
+        \item Studied heterogeneity side effects in federated unlearning under non-IID data, where removing a client can disproportionately degrade similarly distributed remaining clients and destabilize participation incentives.
+        \item Developed a theoretical framework and a Stackelberg-game-based payment mechanism to retain crucial clients, improving global stability by up to 6.23\%, reducing worst-case client degradation by 10.05\%, and achieving up to 38.6\% runtime efficiency over full retraining.
+    \end{itemize}
+    \vspace{0.35em}
   
-% Supporting Projects Section
-\section*{\color{sectioncolor}Supporting Projects}
     \subsubsection*{\color{itemcolor}FedKit: Cross-Platform Federated Learning for Android and iOS}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
         \item Developed a cross-platform federated learning pipeline covering model conversion, hardware-accelerated training, and on-device aggregation; accepted at \textbf{IEEE INFOCOM 2024 Demo}.
@@ -201,7 +204,7 @@
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
         \item Built a real-world mobile application integrating federated learning and differential privacy, with deployment to \textbf{100} customized smart watches and Android/iOS clients.
     \end{itemize}
-\vspace{0.8em}
+\vspace{0.45em}
 
 % Teaching Section
 \section*{\color{sectioncolor}Teaching}
