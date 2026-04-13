@@ -8,22 +8,24 @@ academia: true
 **PhD, HKUST | Expected Graduation: June 2027**  
 **Target: LLM Agent / RL / Agent Systems**
 
-## Top Highlights
-- **SeekBench** — benchmark for epistemic competence in search agents. **ICLR 2026**.
-- **FoldAct** — long-horizon optimization for LLM agents with up to **5.19x** training speedup. [GitHub](https://github.com/SHAO-Jiaqi757/FoldAct)
-- **ByteDance system** — controllable long-running agent system with autonomous execution, iterative refinement, and human interruption.
-
 ----
 
 # Education 
 **Hong Kong University of Science and Technology** (2023 Fall -)
 Doctor of Philosophy (PhD) in Electronic and Computer Engineering
-> My supervisor: [Prof. Wei Zhang (HKUST)](https://seng.hkust.edu.hk/about/people/faculty/wei-zhang) (Mentor: [Prof. Bing Luo (DKU)](https://luobing1008.github.io/))
+> My supervisor: [Prof. Wei Zhang (HKUST)](https://seng.hkust.edu.hk/about/people/faculty/wei-zhang) (Long-term Collaborator: [Prof. Bing Luo (DKU)](https://luobing1008.github.io/))
 
 **The Chinese University of Hong Kong, Shenzhen** (2019 — 2023)
 Bachelor of Engineering in Electrical and Computer Engineer, Stream: *Computer Engineering*
 
 ----
+
+# Research Focus
+
+
+
+Developing \textbf{long-horizon LLM agents}: (1) Agentic RL algorithms that stabilize multi-turn optimization under non-stationary context (FoldAct); (2) Evaluation methodology that moves beyond end-task accuracy to measure how agents gather, revise, and calibrate evidence in the loop (SeekBench, ICLR 2026); and (3) Agent systems that support sustained autonomous execution with controllability at production scale (ByteDance).
+
 
 # Representative Research
 ## SeekBench: Benchmarking Epistemic Competence in LLM Search Agents
