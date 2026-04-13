@@ -157,8 +157,8 @@
     \noindent\href{https://arxiv.org/abs/2512.22733}{\color{linkcolor}[Paper]} \\
     \noindent\textit{\color{graytext}Skills:} \textbf{Agentic RL} | \textbf{Long-horizon Optimization} | \textbf{Context Folding}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
-        \item Proposed \textbf{FoldAct}, a context-folding optimization framework for long-horizon LLM agents that directly addresses instability caused by non-stationary summarization policies in multi-turn RL.
-        \item Designed a structured folding-training pipeline that stabilizes summary-policy learning while improving optimization efficiency under long-context constraints.
+        \item Identified the core scaling bottleneck in long-horizon search-agent RL as training non-stationarity introduced by continually updated summarization policies, rather than context length alone.
+        \item Proposed \textbf{FoldAct}, a context-folding optimization framework with a structured folding-training pipeline that stabilizes summary-policy learning while improving efficiency under long-context constraints.
         \item Delivered up to \textbf{5.19$\times$} training speedup on complex search-agent tasks without sacrificing long-horizon decision quality, validating context folding as a practical scaling primitive for agent optimization.
     \end{itemize}
     \vspace{0.3em}
@@ -178,10 +178,10 @@
     \end{itemize}
     \subsubsection*{\color{itemcolor}MASArena: Benchmarking Framework for Multi-Agent Systems}
     \noindent\textbf{\color{sectioncolor}Principal Lead} | Systems Architecture \& Evaluation Infrastructure \hfill \color{accentcolor}\textbf{May 2025 -- July 2025}
-    \\
-    \noindent\href{https://github.com/LINs-lab/MASArena}{\color{linkcolor}[Project]} \\
+    \noindent\href{https://github.com/LINs-lab/MASArena}{\color{linkcolor}[Project]} 
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
-        \item Led the architecture and implementation of \textbf{MASArena}, an open-source benchmarking stack that unifies experiment orchestration, result management, and visual analytics across single-agent and multi-agent systems.
+        \item Identified a core systems bottleneck in multi-agent research: fragmented evaluation pipelines made reproduction difficult and cross-system comparison unreliable; formulated a unified evaluation workflow around this problem.
+        \item Led the architecture and implementation of \textbf{MASArena}, an open-source benchmarking stack that unifies task execution, experiment orchestration, result management, and visual analytics across single-agent and multi-agent systems.
         \item Built reusable, extensible evaluation infrastructure for standardized comparison across agents, tools, and datasets, strengthening reproducibility and interpretability. \href{https://github.com/LINs-lab/MASArena/graphs/contributors}{\color{linkcolor}[Code contributions]}
     \end{itemize}
 

@@ -105,11 +105,9 @@
         \faGraduationCap\enspace \href{https://scholar.google.com/citations?user=P8MtRXMAAAAJ\&hl=zh-CN}{\color{linkcolor}Google Scholar}
     \end{tabular}
 \end{center}
-\vspace{0.8em}
 
 % Add a subtle horizontal line
 \noindent\color{accentcolor}\rule{\textwidth}{0.5pt}
-\vspace{0.8em}
 
 % Education Section
 \section*{\color{sectioncolor}教育背景}
@@ -126,7 +124,6 @@
 % Research Focus Section
 \section*{\color{sectioncolor}研究方向}
 \noindent 聚焦于\textbf{长程 LLM 智能体}研究：（1）在非平稳上下文条件下稳定多轮优化的智能体强化学习算法（FoldAct）；（2）超越终任务准确率、刻画智能体在交互过程中如何收集、修正与校准证据的评测方法（SeekBench，ICLR 2026）；以及（3）面向长时任务的可恢复、可介入、可持续运行智能体执行框架（字节跳动）。
-\vspace{0.8em}
 
 % Experience Section
 \section*{\color{sectioncolor}实习经历}
@@ -156,9 +153,9 @@
     \noindent\href{https://arxiv.org/abs/2512.22733}{\color{linkcolor}[论文链接]} \\
     \skills{\skilltag{智能体强化学习} \skilltag{长程优化} \skilltag{上下文折叠}} 
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
-        \item 提出 \textbf{FoldAct} 上下文折叠优化框架，直击长程搜索智能体多轮强化学习中由摘要策略非平稳引发的训练不稳定问题。
-        \item 设计结构化折叠训练流程，在控制上下文长度的同时提升折叠策略学习的稳定性与训练效率。
-        \item 在复杂搜索智能体任务上实现最高 \textbf{5.19倍} 训练加速，并保持长程决策质量，验证该方法在长程智能体优化中的可扩展性与实用性。
+        \item 识别出长程搜索智能体多轮强化学习难以扩展的核心瓶颈，在于摘要策略随训练持续更新所引发的训练非平稳性，而非单纯的上下文长度限制。
+        \item 据此提出 \textbf{FoldAct} 上下文折叠优化框架与结构化折叠训练流程，在控制上下文长度的同时稳定折叠策略学习并提升训练效率。
+        \item 在复杂搜索智能体任务上实现最高 \textbf{5.19倍} 训练加速，并保持长程决策质量，验证上下文折叠是长程智能体优化中的有效扩展路径。
     \end{itemize}
     \subsubsection*{3. \color{itemcolor}MorphAgent：自演化多智能体协作算法}
     \noindent\textbf{\color{sectioncolor}共同第一作者} | 系统架构与自适应协作 \hfill \color{accentcolor}\textbf{ICML-MAS, 2025} \\
@@ -175,10 +172,10 @@
     \end{itemize}
     \subsubsection*{5. \color{itemcolor}MASArena：多智能体系统基准测试框架}
     \noindent\textbf{\color{sectioncolor}主要负责人} | 系统架构与评测基础设施 \hfill \color{accentcolor}\textbf{2025年5月 – 2025年7月}
-    \\
     \noindent\href{https://github.com/LINs-lab/MASArena}{\color{linkcolor}[项目链接]} \\
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
-        \item 从零主导 \textbf{MASArena} 开源评测框架的架构设计与实现，统一单智能体与多智能体系统的实验编排、结果管理与可视化分析流程。
+        \item 识别出多智能体研究中评测流程碎片化、实验复现困难与跨系统横向比较失真的关键系统瓶颈，并据此抽象统一评测工作流。
+        \item 从零主导 \textbf{MASArena} 开源评测框架的架构设计与实现，统一单智能体与多智能体系统的任务执行、实验编排、结果管理与可视化分析流程。
         \item 构建可扩展、可复用的评测基础设施，支持不同智能体、工具与数据集上的标准化比较，显著提升评测的可重现性与可解释性。\href{https://github.com/LINs-lab/MASArena/graphs/contributors}{\color{linkcolor}[代码贡献]}
     \end{itemize}
 
