@@ -24,7 +24,7 @@ Bachelor of Engineering in Electrical and Computer Engineer, Stream: *Computer E
 
 
 
-Developing \textbf{long-horizon LLM agents}: (1) Agentic RL algorithms that stabilize multi-turn optimization under non-stationary context (FoldAct); (2) Evaluation methodology that moves beyond end-task accuracy to measure how agents gather, revise, and calibrate evidence in the loop (SeekBench, ICLR 2026); and (3) Agent systems that support sustained autonomous execution with controllability at production scale (ByteDance).
+Developing \textbf{long-horizon LLM agents}: (1) Agentic RL algorithms that stabilize multi-turn optimization under non-stationary context (FoldAct); (2) Evaluation methodology that moves beyond end-task accuracy to measure how agents gather, revise, and calibrate evidence in the loop (SeekBench, ICLR 2026); and (3) Agent systems and harness infrastructure that support sustained autonomous execution and rigorous evaluation at production scale (ByteDance, Tencent Hunyuan).
 
 
 # Representative Research
@@ -67,7 +67,13 @@ Developing \textbf{long-horizon LLM agents}: (1) Agentic RL algorithms that stab
 -----
 
 # Experience
+## Tencent | Senior Researcher (Hunyuan LLM Team, Qingyun Internship Program)
+* May 2026 - Present
+* Research on agent4research harness to build scalable evaluation and execution infrastructure for LLM-driven research agents.
+* Research on harness eval to develop rigorous evaluation methodologies and benchmarks for long-horizon agent capabilities.
+
 ## ByteDance | Intern (Agent Long-Horizon Self-Iterative Algorithm Systems)
+* Jan. 2026 -- May 2026
 * Independently led end-to-end implementation of a long-running agent and self-iterative algorithm project, from design to deployment.
 * Designed and implemented a **Daemon + Rubric + Harness** architecture for daemonized scheduling/state hosting, rubric-driven evaluation/iteration, and harness-based orchestration/replay validation.
 * Enabled **Auto / Interactive / Human-Interrupt** modes to support autonomous execution, collaborative workflows, and manual takeover.
