@@ -123,15 +123,15 @@
 
 % Research Focus Section
 \section*{\color{sectioncolor}研究方向}
-\noindent 聚焦于\textbf{长程 LLM 智能体}研究：（1）在非平稳上下文条件下稳定多轮优化的智能体强化学习算法（FoldAct）；（2）超越终任务准确率、刻画智能体在交互过程中如何收集、修正与校准证据的评测方法（SeekBench，ICLR 2026）；以及（3）面向长时任务的可恢复、可介入、可持续运行智能体执行框架（字节跳动）。
+\noindent 我的研究聚焦长程 Agent 任务的可信评测与可靠执行。首先，针对现有评测只能判断终结果、无法评估 Agent 在多轮交互中的认知能力的问题，提出 \textbf{SeekBench}（ICLR 2026），从证据收集、错误修正、置信校准三个维度建立过程评测标准；同时建立 \textbf{Harness Eval} 框架，通过"控制模型变量、隔离 Core 差异"的方法论定义四级长程任务协议（单轮工具链 $\rightarrow$ 多轮迭代 $\rightarrow$ 跨会话持久 $\rightarrow$ 自主长程），并构建 reward hacking 五层防御体系（Prevent Access / Inference / Specialization / Evaluator Exploit / Detection），保障长程评测的可信性。在此基础上，评测标准暴露出 Agent 在长时运行中的可靠性缺口，设计可恢复、可介入、可持续的智能体执行框架。
 
 % Experience Section
 \section*{\color{sectioncolor}实习经历}
     \subsubsection*{\color{itemcolor}腾讯混元大模型团队｜高级研究员（青云实习计划）}
-    \noindent\textbf{\color{sectioncolor}Agent4Research Harness 与 Harness Eval 研究} \hfill \color{accentcolor}\textbf{2026年5月 – 至今}
+    \noindent\textbf{\color{sectioncolor}Harness Eval 评测框架与 Reward Hacking 防御体系} \hfill \color{accentcolor}\textbf{2026年5月 – 至今}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
-        \item 开展 \textbf{Agent4Research Harness} 研究，构建面向研究型大语言模型智能体的可扩展执行与评测基础设施。
-        \item 开展 \textbf{Harness Eval} 评测研究，建立长程智能体能力的严格评测方法与基准。
+        \item 研究 \textbf{Harness Eval} 评测框架，建立"控制模型变量、隔离 Core 差异"的评估方法论，设计长程任务协议（单轮工具链 $\rightarrow$ 多轮迭代 $\rightarrow$ 跨会话持久 $\rightarrow$ 自主长程），系统量化命名空间保护强度、Hook 单调性、上下文压缩策略等 Core 机制差异，形成面向智能体基础设施的严格评测基准。
+        \item 主导评测 \textbf{reward hacking 防范体系}设计，系统分析评测过程中 Expose$\rightarrow$Exploit$\rightarrow$Mislead 链路，建立五层防御目标（Prevent Access / Prevent Inference / Prevent Specialization / Prevent Evaluator Exploit / Detect Suspicious Outcomes），保障 benchmark 评估有效性。设计参数去标识化、结构异构化、运行时对抗检测等防护措施。
     \end{itemize}
 
     \subsubsection*{\color{itemcolor}字节跳动｜算法实习生（长程智能体系统）}

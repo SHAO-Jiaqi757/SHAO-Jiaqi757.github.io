@@ -125,16 +125,16 @@
 
 % Research Focus Section
 \section*{\color{sectioncolor}Research Focus}
-\noindent Developing \textbf{long-horizon LLM agents}: (1) Agentic RL algorithms that stabilize multi-turn optimization under non-stationary context (FoldAct); (2) Evaluation methodology that moves beyond end-task accuracy to measure how agents gather, revise, and calibrate evidence in the loop (SeekBench, ICLR 2026); and (3) Agent systems that support sustained autonomous execution with human-in-the-loop controllability at production scale (ByteDance).
+\noindent My research focuses on \textbf{trustworthy evaluation and reliable execution of long-horizon agent tasks}. First, addressing the limitation that existing evaluations only judge final outcomes without assessing agents' cognitive capabilities during multi-turn interactions, I proposed \textbf{SeekBench} (ICLR 2026), establishing process evaluation standards from three dimensions: evidence collection, error correction, and confidence calibration; simultaneously built the \textbf{Harness Eval} framework, defining four-level long-horizon task protocols (single-turn tool chain $\rightarrow$ multi-turn iteration $\rightarrow$ cross-session persistence $\rightarrow$ autonomous long-horizon) through the "control model variables, isolate Core differences" methodology, and constructed a five-layer reward hacking defense system (Prevent Access / Inference / Specialization / Evaluator Exploit / Detection), ensuring the trustworthiness of long-horizon evaluation. On this foundation, as evaluation standards expose reliability gaps in agents during long-term execution, I design recoverable, interruptible, and sustainable agent execution frameworks.
 \vspace{0.35em}
 
 % Experience Section
 \section*{\color{sectioncolor}Experience}
     \subsubsection*{\color{itemcolor}Tencent | Senior Researcher (Hunyuan LLM Team, Qingyun Internship Program)}
-    \noindent\textbf{\color{sectioncolor}Agent4Research Harness \& Harness Eval} \hfill \color{accentcolor}\textbf{May 2026 -- Present}
+    \noindent\textbf{\color{sectioncolor}Harness Eval \& Reward Hacking Defense} \hfill \color{accentcolor}\textbf{May 2026 -- Present}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
-        \item Research on agent4research harness to build scalable evaluation and execution infrastructure for LLM-driven research agents.
-        \item Research on harness eval to develop rigorous evaluation methodologies and benchmarks for long-horizon agent capabilities.
+        \item Research on \textbf{Harness Eval} evaluation framework, establishing the "control model variables, isolate Core differences" evaluation methodology, designing long-horizon task protocols (single-turn tool chain $\rightarrow$ multi-turn iteration $\rightarrow$ cross-session persistence $\rightarrow$ autonomous long-horizon), and systematically quantifying Core mechanism differences including namespace protection strength, Hook monotonicity, and context compression strategies, forming rigorous evaluation benchmarks for agent infrastructure.
+        \item Lead the design of \textbf{reward hacking defense system} for evaluation, systematically analyzing the Expose$\rightarrow$Exploit$\rightarrow$Mislead chain in evaluation processes, establishing five-layer defense objectives (Prevent Access / Prevent Inference / Prevent Specialization / Prevent Evaluator Exploit / Detect Suspicious Outcomes), ensuring benchmark evaluation validity. Design protections including parameter de-identification, structural heterogenization, and runtime adversarial detection.
     \end{itemize}
 
     \subsubsection*{\color{itemcolor}ByteDance | Algorithm Intern (Long-running Agent Systems)}
