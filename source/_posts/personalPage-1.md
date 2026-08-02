@@ -136,7 +136,7 @@ My research centers on **long-horizon LLM agents** across three directions:
 * 100+ customized smart watches deployed at DKU.
 * [Video →](https://www.bilibili.com/video/BV1da4y197ne/)
 
-|<img src="../imgs/FedCampus.png" alt="FedCampus" height="200"/>| <iframe src="https://player.bilibili.com/player.html?aid=664682090&bvid=BV1da4y197ne&cid=1367652871&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="200"> </iframe>|
+|<img src="../imgs/FedCampus.png" alt="FedCampus" height="200"/>| <iframe src="https://player.bilibili.com/player.html?aid=664682090&bvid=BV1da4y197ne&cid=1367652871&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allow="autoplay 'none'; fullscreen" height="200"> </iframe>|
 |:---:|:---:|
 
 ## Edge-based Cross-device Federated Learning Prototypes

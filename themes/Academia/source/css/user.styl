@@ -18,13 +18,13 @@
   font-family "Inter", "Helvetica Neue", Arial, sans-serif
 
 .tag-top
-  background #1353d7
+  background $theme-blue
   color white
 
 .tag-first
-  background #e8f0fe
-  color #1353d7
-  border 1px solid #1353d7
+  background #f1f5f9
+  color $theme-blue
+  border 1px solid $theme-blue
 
 .tag-cofirst
   background #fff3e0
@@ -66,11 +66,11 @@
     margin-bottom 0.8rem
     line-height 1.6
     a
-      color #1353d7
+      color $theme-blue
       border-bottom none
       &:hover
         text-decoration underline
-        color #0a2d73
+        color $theme-dark-blue
 
 // --- Section dividers ---
 .page article
@@ -78,7 +78,7 @@
     font-family "Source Serif 4", Georgia, serif
     font-weight 700
     color #1a1a1a
-    border-bottom 2px solid #1353d7
+    border-bottom 2px solid $theme-blue
     padding-bottom 0.4rem
     margin-top 2.5rem
     margin-bottom 1.2rem
@@ -90,7 +90,7 @@
     margin-top 2rem
     margin-bottom 1rem
     &::before
-      background-color #1353d7
+      background-color $theme-blue
 
   h3
     font-family "Inter", "Helvetica Neue", Arial, sans-serif
@@ -102,7 +102,7 @@
   // Blockquote / intro
   > blockquote:first-of-type
     background transparent
-    border-left 4px solid #1353d7
+    border-left 4px solid $theme-blue
     color #4b5563
     font-size 1.7rem
     font-style italic
@@ -114,10 +114,10 @@
     color #374151
 
   a
-    color #1353d7
+    color $theme-blue
     border-bottom none
     &:hover
-      color #0a2d73
+      color $theme-dark-blue
       text-decoration underline
 
 // --- Side card improvements ---
