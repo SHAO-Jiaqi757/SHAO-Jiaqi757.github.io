@@ -22,6 +22,24 @@ Bachelor of Engineering in Electrical and Computer Engineering, *Computer Engine
 
 ----
 
+# Experience
+
+## Tencent | Senior Researcher (Hunyuan LLM Team, Qingyun Internship Program)
+*May 2026 – Present*
+
+* Research on **agent4research harness** — scalable evaluation and execution infrastructure for LLM-driven research agents.
+* Research on **harness eval** — rigorous evaluation methodologies and benchmarks for long-horizon agent capabilities.
+
+## ByteDance | Intern (Agent Long-Horizon Self-Iterative Algorithm Systems)
+*Jan. 2026 – May 2026*
+
+* Led end-to-end implementation of a long-running agent and self-iterative algorithm project.
+* Designed **Daemon + Rubric + Harness** architecture for daemonized scheduling, rubric-driven evaluation/iteration, and harness-based orchestration.
+* Enabled **Auto / Interactive / Human-Interrupt** modes for autonomous execution and manual takeover.
+* Built robust state management with stage transitions, failure recovery, and human handoff.
+
+----
+
 # Research Focus
 
 <span class="tag tag-agent">LLM Agents</span> <span class="tag tag-rl">Agentic RL</span> <span class="tag tag-mas">Multi-Agent Systems</span> <span class="tag tag-eval">Evaluation</span>
@@ -42,6 +60,22 @@ My research centers on **long-horizon LLM agents** across three directions:
 * Developed a standardized benchmark evaluating LLM search agents beyond end-task accuracy — measuring **how** agents search, not just **whether** they succeed.
 * Introduced trajectory-level metrics: **Groundedness**, **Recovery**, and **Calibration**.
 * [GitHub](https://github.com/SHAO-Jiaqi757/SeekBench) · [arXiv](https://arxiv.org/abs/2509.22391)
+
+## HackDetect: Protocol Validity and Reward-Hacking Audit for Agent Benchmarks
+<span class="tag tag-arxiv">arXiv 2026</span> <span class="tag tag-first">First Author</span> <span class="tag tag-area">Benchmark Audit</span>
+
+* Formulated **protocol validity** for agent benchmarks and developed a post-hoc audit framework to identify reward-hacking exposures.
+* Audited 2,385 traces across 15 agent benchmarks; found evidence of exposures in **67% of Frontier Science** and **66.7% of AutoLab** traces.
+* Measured score inflation of **0.45–1.00** across paired comparisons, showing benchmark reports must provide evidence that scores reflect intended capabilities.
+* [arXiv](https://arxiv.org/abs/2607.22368)
+
+## When Stored Evidence Stops Being Usable: Scale-Conditioned Evaluation of Agent Memory
+<span class="tag tag-arxiv">arXiv 2026</span> <span class="tag tag-cofirst">Co-first Author</span> <span class="tag tag-area">Evaluation Protocol</span>
+
+* Presented a scale-conditioned evaluation protocol for agent memory under evidence-preserving growth: task evidence fixed, irrelevant sessions added.
+* Reported four trajectory-level diagnostics: budget-compliant reliability, tail memory-call burden, failure-regime decomposition, and usable-scale boundary.
+* Showed that reliability loss is not a single phenomenon — similar drops can hide entirely different failure regimes across memory interfaces.
+* [arXiv](https://arxiv.org/abs/2605.07313)
 
 ## FoldAct: Efficient and Stable Context Folding for Long-Horizon Search Agents
 <span class="tag tag-arxiv">arXiv 2025</span> <span class="tag tag-first">First Author</span> <span class="tag tag-area">Algorithm</span>
@@ -69,10 +103,12 @@ My research centers on **long-horizon LLM agents** across three directions:
 ### 2026
 <ol class="pub-list">
 <li><b>Shao, J.</b>, Lin, Y., Lohani, M. P., Miao, Y., and <a href="https://luobing1008.github.io/">Luo, B.</a>, "Do LLM Agents Know How to Ground, Recover, and Assess? A Benchmark for Epistemic Competence in Information-Seeking Agents", <i>ICLR 2026</i>. 🎉 <a href="https://arxiv.org/abs/2509.22391">[arXiv]</a> <a href="https://github.com/SHAO-Jiaqi757/SeekBench">[Code]</a></li>
+<li><b>Shao, J.</b>, "HackDetect: Protocol Validity and Reward-Hacking Audit for Agent Benchmarks", <i>arXiv e-prints</i>, arXiv:2607.22368, 2026. <a href="https://arxiv.org/abs/2607.22368">[arXiv]</a></li>
+<li><b>Shao, J.</b>, Lu, Y., Zhang, Y., and <a href="https://luobing1008.github.io/">Luo, B.</a>, "When Stored Evidence Stops Being Usable: Scale-Conditioned Evaluation of Agent Memory", <i>arXiv e-prints</i>, arXiv:2605.07313, 2026. (*Equal contribution with Y. Lu) <a href="https://arxiv.org/abs/2605.07313">[arXiv]</a></li>
 </ol>
 
 ### 2025
-<ol class="pub-list" start="2">
+<ol class="pub-list" start="4">
 <li><b>Shao, J.</b>, <a href="https://tlin-taolin.github.io/">Lin, T.</a>, <a href="https://xiaojin319.github.io/">Zhang, X.</a>, <a href="https://seng.hkust.edu.hk/about/people/faculty/qiang-yang">Yang, Q.</a>, and <a href="https://luobing1008.github.io/">Luo, B.</a>, "Beyond Right to be Forgotten: Managing Heterogeneity Side Effects Through Strategic Incentives", <i>ACM MobiHoc 2025</i>. 🎉</li>
 <li>Lu, S.*, <b>Shao, J.*</b>, <a href="https://luobing1008.github.io/">Luo, B.</a>, and <a href="https://tlin-taolin.github.io/">Lin, T.</a>, "MorphAgent: Empowering Agents Through Self-Evolving Profiles and Decentralized Collaboration", <i>ICML-MAS 2025</i>. (*Equal contribution)</li>
 <li><b>Shao, J.</b>, Yuan, T., <a href="https://tlin-taolin.github.io/">Lin, T.</a>, and <a href="https://luobing1008.github.io/">Luo, B.</a>, "Cognitive Insights and Stable Coalition Matching for Fostering Multi-Agent Cooperation", <i>arXiv e-prints</i>, arXiv:2405.18044.</li>
@@ -80,33 +116,15 @@ My research centers on **long-horizon LLM agents** across three directions:
 </ol>
 
 ### 2024
-<ol class="pub-list" start="7">
+<ol class="pub-list" start="9">
 <li>He, S., Tang, B., Zhang, B., <b>Shao, J.</b>, <a href="https://xmouyang.github.io/">Ouyang, X.</a>, Nugraha, D. N., and <a href="https://luobing1008.github.io/">Luo, B.</a>, "FedKit: Enabling Cross-Platform Federated Learning for Android and iOS", <i>IEEE INFOCOM WKSHPS</i>, 2024.</li>
 <li>Geng, J., Tang, B., Zhang, B., <b>Shao, J.</b>, and <a href="https://luobing1008.github.io/">Luo, B.</a>, "FedCampus: A Real-world Privacy-preserving Mobile Application for Smart Campus via Federated Learning & Analytics", <i>ACM MobiHoc (Demo)</i>, 2024.</li>
 </ol>
 
 ### 2023
-<ol class="pub-list" start="9">
+<ol class="pub-list" start="11">
 <li><b>Shao, J.</b>, Han, S., <a href="https://chaoyanghe.com/">He, C.</a>, and <a href="https://luobing1008.github.io/">Luo, B.</a>, "Privacy-Preserving Federated Heavy Hitter Analytics for Non-IID Data", <i>FL-ICML Workshop</i>, 2023.</li>
 </ol>
-
-----
-
-# Experience
-
-## Tencent | Senior Researcher (Hunyuan LLM Team, Qingyun Internship Program)
-*May 2026 – Present*
-
-* Research on **agent4research harness** — scalable evaluation and execution infrastructure for LLM-driven research agents.
-* Research on **harness eval** — rigorous evaluation methodologies and benchmarks for long-horizon agent capabilities.
-
-## ByteDance | Intern (Agent Long-Horizon Self-Iterative Algorithm Systems)
-*Jan. 2026 – May 2026*
-
-* Led end-to-end implementation of a long-running agent and self-iterative algorithm project.
-* Designed **Daemon + Rubric + Harness** architecture for daemonized scheduling, rubric-driven evaluation/iteration, and harness-based orchestration.
-* Enabled **Auto / Interactive / Human-Interrupt** modes for autonomous execution and manual takeover.
-* Built robust state management with stage transitions, failure recovery, and human handoff.
 
 ----
 
