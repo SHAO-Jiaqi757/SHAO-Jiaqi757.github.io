@@ -3,7 +3,7 @@ favicon: /img/favicon.png
 avatar: /img/profile.png
 # if author sets in hexo_config, this string doesn't work
 author: 'Jiaqi Shao'
-author_bio: 'PhD @ HKUST. Currently at Tencent Hunyuan researching agent harness, evaluation, and RSI for LLM agents. Previously at ByteDance building long-horizon agent systems.'
+author_bio: 'PhD @ HKUST. Currently at Tencent Hunyuan researching agent harness, evaluation, and recursive self-improvement (RSI) for LLM agents. Previously at ByteDance building long-horizon agent systems.'
 
 since: 2020
 

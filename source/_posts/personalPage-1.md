@@ -29,7 +29,7 @@ Bachelor of Engineering in Electrical and Computer Engineering, *Computer Engine
 
 * Research on **agent4research harness** — scalable evaluation and execution infrastructure for LLM-driven research agents.
 * Research on **harness eval** — rigorous evaluation methodologies and benchmarks for long-horizon agent capabilities.
-* Research on **RSI (Research Safety Index) evaluation** — systematic safety assessment framework for research-oriented LLM agents.
+* Research on **RSI (recursive self-improvement) evaluation** — systematic evaluation framework for self-improving LLM research agents.
 
 ## ByteDance | Intern (Agent Long-Horizon Self-Iterative Algorithm Systems)
 *Jan. 2026 – May 2026*
