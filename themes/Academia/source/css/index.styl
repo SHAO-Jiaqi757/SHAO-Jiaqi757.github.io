@@ -1,7 +1,8 @@
 @import 'user'
 @import '_highlight/highlight.styl'
 
-$font-family = "Times New Roman", FangSong, STFangsong, sans-serif;
+$font-family = "Inter", "Helvetica Neue", Arial, sans-serif;
+$font-serif = "Source Serif 4", Georgia, serif;
 $theme-blue = #1353d7;
 $theme-dark-blue = #096494;
 $theme-red = #c62641;
@@ -80,6 +81,13 @@ blockquote
     transition: all 0.2s ease-in-out;
     &:hover
       color: black;
+
+  .site-subtitle
+    font-family $font-family
+    font-size 1.4rem
+    color #9ba1a6
+    font-weight 400
+    margin-left 0.5rem
 
 @media (max-width: 34em)
   .menus-open .menus_items
@@ -215,6 +223,7 @@ blockquote
     display: table;
 
 .page-title
+  font-family $font-serif
   font-size 3rem
   padding 0 1.2rem
 
@@ -223,8 +232,10 @@ blockquote
   padding-right 1.2rem
 
   h1
+    font-family $font-serif
     font-size 3rem
   h2
+    font-family $font-serif
     font-size 2.2rem
     font-style: italic
     // add colored vertical line on left text box
@@ -237,7 +248,7 @@ blockquote
       top: 0
       width: 4px
       height: 100%
-      background-color: rgba(0, 128, 0, 0.877) 
+      background-color: $theme-blue 
   
   
 
@@ -248,15 +259,14 @@ blockquote
   li
     font-size 1.8rem
   a
-    color rgb(74, 182, 64)
+    color $theme-blue
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    text-decoration: none; /* Removes the underline */
-    border-bottom: 1px dashed; /* Adds a bottom border */
-    /* For a hover effect to indicate it's clickable */
+    text-decoration: none;
+    border-bottom: 1px dashed;
     &:hover
-      text-decoration: underline; /* Adds underline on hover for visual feedback */
-      color: rgb(2, 139, 16); /* Darkens the color on hover */
+      text-decoration: underline;
+      color: $theme-dark-blue;
 
   .highlight
     overflow: auto;

@@ -2,8 +2,8 @@ favicon: /img/favicon.png
 # Change to your profile picture
 avatar: /img/profile.png
 # if author sets in hexo_config, this string doesn't work
-author: 'Jiaqi'
-author_bio: 'LLM Agent, Agent System, Agent Training'
+author: 'Jiaqi Shao'
+author_bio: 'PhD @ HKUST. Researching long-horizon LLM agents, agentic RL, and multi-agent collaboration. ICLR 2026 · ICML-MAS 2025 · ACM MobiHoc 2025.'
 
 since: 2020
 

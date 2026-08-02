@@ -1,1 +1,132 @@
-//customize your own CSS for page display
+// ============================================
+//  Jiaqi Shao — Personal Homepage Overrides
+//  Reference: clean academic readability (Dieter Rams + MIT CSAIL)
+// ============================================
+
+// --- Google Fonts loaded in layout.pug ---
+
+// --- Tags ---
+.tag
+  display inline-block
+  font-size 1.2rem
+  font-weight 600
+  padding 0.2rem 0.7rem
+  border-radius 3px
+  margin-right 0.4rem
+  margin-bottom 0.4rem
+  letter-spacing 0.02em
+  font-family "Inter", "Helvetica Neue", Arial, sans-serif
+
+.tag-top
+  background #1353d7
+  color white
+
+.tag-first
+  background #e8f0fe
+  color #1353d7
+  border 1px solid #1353d7
+
+.tag-cofirst
+  background #fff3e0
+  color #e65100
+  border 1px solid #e65100
+
+.tag-arxiv
+  background #f3f4f6
+  color #374151
+  border 1px solid #d1d5db
+
+.tag-agent
+  background #e0f2fe
+  color #0369a1
+
+.tag-rl
+  background #f3e8ff
+  color #7c3aed
+
+.tag-mas
+  background #dcfce7
+  color #15803d
+
+.tag-eval
+  background #fef3c7
+  color #b45309
+
+.tag-area
+  background #f8fafc
+  color #475569
+  border 1px solid #e2e8f0
+
+// --- Publication list ---
+.pub-list
+  padding-left 2rem
+  margin-top 0.8rem
+  margin-bottom 1.5rem
+  li
+    margin-bottom 0.8rem
+    line-height 1.6
+    a
+      color #1353d7
+      border-bottom none
+      &:hover
+        text-decoration underline
+        color #0a2d73
+
+// --- Section dividers ---
+.page article
+  h1
+    font-family "Source Serif 4", Georgia, serif
+    font-weight 700
+    color #1a1a1a
+    border-bottom 2px solid #1353d7
+    padding-bottom 0.4rem
+    margin-top 2.5rem
+    margin-bottom 1.2rem
+
+  h2
+    font-family "Source Serif 4", Georgia, serif
+    font-weight 600
+    color #1a1a1a
+    margin-top 2rem
+    margin-bottom 1rem
+    &::before
+      background-color #1353d7
+
+  h3
+    font-family "Inter", "Helvetica Neue", Arial, sans-serif
+    font-weight 600
+    color #2d2d2d
+    margin-top 1.5rem
+    margin-bottom 0.6rem
+
+  // Blockquote / intro
+  > blockquote:first-of-type
+    background transparent
+    border-left 4px solid #1353d7
+    color #4b5563
+    font-size 1.7rem
+    font-style italic
+    margin 1rem 0 2rem 0
+    padding 0.5rem 1.5rem
+
+  p, li
+    font-family "Inter", "Helvetica Neue", Arial, sans-serif
+    color #374151
+
+  a
+    color #1353d7
+    border-bottom none
+    &:hover
+      color #0a2d73
+      text-decoration underline
+
+// --- Side card improvements ---
+.side-card
+  .author-bio
+    font-family "Inter", "Helvetica Neue", Arial, sans-serif
+    color #4b5563
+    line-height 1.5
+
+// --- Smooth scroll offset for fixed header ---
+html
+  scroll-padding-top 80px

@@ -1,0 +1,149 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[UTF8, scheme=plain]{ctex}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+
+% Define colors
+\definecolor{linkcolor}{RGB}{25,118,210}
+\definecolor{sectioncolor}{RGB}{99,102,241}
+\definecolor{namecolor}{RGB}{15,23,42}
+\definecolor{graytext}{RGB}{71,85,105}
+\definecolor{itemcolor}{RGB}{30,41,59}
+\definecolor{accentcolor}{RGB}{0,0,0}
+\definecolor{lightgray}{RGB}{241,245,249}
+
+\hypersetup{colorlinks=true, linkcolor=linkcolor, urlcolor=linkcolor}
+\pagenumbering{gobble}
+
+\titleformat{\section}{\Large\bfseries\color{sectioncolor}}{\thesection}{1em}{\color{accentcolor}\rule[-0.3em]{0.5em}{0.4em}\hspace{0.5em}}
+\titleformat{\subsection}{\large\bfseries\color{sectioncolor}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{itemcolor}}{\thesubsubsection}{1em}{}
+
+\setlist[itemize]{noitemsep, topsep=0.3em, leftmargin=1.5em}
+\setlist[enumerate]{noitemsep, topsep=0.3em, leftmargin=1.5em}
+
+\renewcommand{\labelitemi}{\textcolor{accentcolor}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{accentcolor}{\textendash}}
+
+\newcommand{\skilltag}[1]{%
+    \setlength{\fboxsep}{3pt}%
+    \setlength{\fboxrule}{0.5pt}%
+    \colorbox{lightgray}{\color{itemcolor}\small\textbf{#1}}%
+    \hspace{0.3em}%
+}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{28}{34}\selectfont\textbf{\color{namecolor}邵佳琪}} \\ \vspace{0.3em}
+    {\color{graytext}\fontsize{11}{13}\selectfont PhD, HKUST | Expected Graduation: June 2027} \\ \vspace{0.15em}
+    {\color{graytext}\fontsize{11}{13}\selectfont Target: LLM Agent / RL / Agent Systems} \\ \vspace{0.4em}
+    \begin{tabular}{c c c c c}
+        \textbf{GitHub}: \href{https://github.com/SHAO-Jiaqi757}{\color{linkcolor}链接} &
+        \textbf{主页}: \href{https://shao-jiaqi757.github.io/}{\color{linkcolor}链接} &
+        \textbf{邮箱}: \href{mailto:jshaoaj@connect.ust.hk}{\color{linkcolor}jshaoaj@connect.ust.hk} &
+        \textbf{Scholar}: \href{https://scholar.google.com/citations?user=P8MtRXMAAAAJ\&hl=zh-CN}{\color{linkcolor}链接}
+    \end{tabular}
+\end{center}
+
+\noindent\color{accentcolor}\rule{\textwidth}{0.5pt}
+
+\section*{\color{sectioncolor}教育背景}
+\subsubsection*{\color{itemcolor}香港科技大学}
+\textit{\color{graytext}电子与计算机工程博士（PhD）} \hfill \color{accentcolor}\textbf{2023年秋季 -- 至今}
+\begin{itemize}[leftmargin=*]
+    \item \small{\color{graytext}导师：张薇教授（香港科技大学）（长期合作老师：罗冰教授（昆山杜克大学））}
+\end{itemize}
+
+\subsubsection*{\color{itemcolor}香港中文大学（深圳）}
+\textit{\color{graytext}电子与计算机工程学士 | 专业方向：计算机工程} \hfill \color{accentcolor}\textbf{2019 -- 2023}
+
+\section*{\color{sectioncolor}研究方向}
+\noindent 我的研究聚焦长程 Agent 任务的可信评测与可靠执行。首先，针对现有评测只能判断终结果、无法评估 Agent 在多轮交互中的认知能力的问题，提出 \textbf{SeekBench}（ICLR 2026），从证据收集、错误修正、置信校准三个维度建立过程评测标准；同时建立 \textbf{Harness Eval} 框架，通过"控制模型变量、隔离 Core 差异"的方法论定义四级长程任务协议（单轮工具链 $\rightarrow$ 多轮迭代 $\rightarrow$ 跨会话持久 $\rightarrow$ 自主长程），并构建 reward hacking 五层防御体系（Prevent Access / Inference / Specialization / Evaluator Exploit / Detection），保障长程评测的可信性。在此基础上，评测标准暴露出 Agent 在长时运行中的可靠性缺口，设计可恢复、可介入、可持续的智能体执行框架。
+
+\section*{\color{sectioncolor}实习经历}
+\subsubsection*{\color{itemcolor}腾讯混元大模型团队 | 高级研究员（青云实习计划）}
+\noindent\textbf{\color{sectioncolor}Harness Eval 评测框架与 Reward Hacking 防御体系} \hfill \color{accentcolor}\textbf{2026年5月 -- 至今}
+\begin{itemize}[leftmargin=*]
+    \item 研究 \textbf{Harness Eval} 评测框架，建立"控制模型变量、隔离 Core 差异"的评估方法论，设计长程任务协议（单轮工具链 $\rightarrow$ 多轮迭代 $\rightarrow$ 跨会话持久 $\rightarrow$ 自主长程），系统量化命名空间保护强度、Hook 单调性、上下文压缩策略等 Core 机制差异，形成面向智能体基础设施的严格评测基准。
+    \item 主导评测 \textbf{reward hacking 防范体系}设计，系统分析评测过程中 Expose$\rightarrow$Exploit$\rightarrow$Mislead 链路，建立五层防御目标（Prevent Access / Prevent Inference / Prevent Specialization / Prevent Evaluator Exploit / Detect Suspicious Outcomes），保障 benchmark 评估有效性。设计参数去标识化、结构异构化、运行时对抗检测等防护措施。
+\end{itemize}
+
+\subsubsection*{\color{itemcolor}字节跳动 | 算法实习生（长程智能体系统）}
+\noindent\textbf{\color{sectioncolor}系统设计与实现} \hfill \color{accentcolor}\textbf{2026年1月 -- 2026年5月}
+\begin{itemize}[leftmargin=*]
+    \item 端到端负责长程智能体系统的设计与落地，面向复杂任务中的持续执行、自迭代优化与人工介入需求。
+    \item 构建统一运行框架，将持续执行、过程评估与迭代优化闭环联结起来，支撑长时程智能体行为的稳定运行。
+    \item 支持 \textbf{自主执行 / 交互协同 / 人工接管} 三种运行模式，提升系统在自主运行与人机协同场景下的可控性。
+    \item 建立异常恢复与人工接管机制，增强系统在长时程运行中的鲁棒性、可靠性与可部署性。
+\end{itemize}
+
+\section*{\color{sectioncolor}代表性研究成果}
+\subsubsection*{1. \color{itemcolor}SeekBench：面向搜索智能体认知能力的标准化评测基准}
+\noindent\textbf{\color{sectioncolor}第一作者} | 基准设计与评估方法论 \hfill \color{accentcolor}\textbf{ICLR 2026}
+\begin{itemize}[leftmargin=*]
+    \item 开发 \textbf{SeekBench} 标准化评测基准，用于系统评估搜索型大语言模型智能体的认知能力，而不仅仅停留在最终任务准确率层面。
+    \item 提出并落地轨迹级评测范式，使智能体评测从"结果是否正确"扩展到"过程是否可靠"。
+    \item 定义三个核心指标——\textit{推理可靠性}（Groundedness）、\textit{恢复性}（Recovery）和\textit{校准性}（Calibration）——量化评估证据整合、低质量信息恢复与基于证据的决策能力。
+\end{itemize}
+
+\subsubsection*{2. \color{itemcolor}FoldAct：面向长程大语言模型智能体的稳定优化方法}
+\noindent\textbf{\color{sectioncolor}第一作者} | 算法设计与长程优化 \hfill \color{accentcolor}\textbf{arXiv, 2025}
+\begin{itemize}[leftmargin=*]
+    \item 识别出长程搜索智能体多轮强化学习难以扩展的核心瓶颈，在于摘要策略随训练持续更新所引发的训练非平稳性，而非单纯的上下文长度限制。
+    \item 据此提出 \textbf{FoldAct} 上下文折叠优化框架与结构化折叠训练流程，在控制上下文长度的同时稳定折叠策略学习并提升训练效率。
+    \item 在复杂搜索智能体任务上实现最高 \textbf{5.19倍} 训练加速，并保持长程决策质量，验证上下文折叠是长程智能体优化中的有效扩展路径。
+\end{itemize}
+
+\subsubsection*{3. \color{itemcolor}MorphAgent：自演化多智能体协作算法}
+\noindent\textbf{\color{sectioncolor}共同第一作者} | 系统架构与自适应协作 \hfill \color{accentcolor}\textbf{ICML-MAS, 2025}
+\begin{itemize}[leftmargin=*]
+    \item 设计去中心化、自适应的协作机制，使大语言模型智能体能够在没有预定义结构的情况下动态演化角色。
+    \item 构建自演化协作框架，在推理与代码生成基准上提升任务表现、迁移能力与鲁棒性。
+\end{itemize}
+
+\subsubsection*{4. \color{itemcolor}昆山杜克大学科研助理}
+\noindent\textbf{\color{sectioncolor}研究指导} \hfill \color{accentcolor}\textbf{2025年2月 -- 2026年1月}
+\begin{itemize}[leftmargin=*]
+    \item 搭建学生科研推进机制，覆盖选题设计、系统实现、实验组织与论文写作，并指导 \textbf{10余名本科生} 开展大语言模型叙事系统、记忆机制与人机协作相关研究。
+    \item 组织与 Duke 相关合作伙伴的交流展示活动，包括项目汇报与论坛展出，推动跨机构合作交流与团队协同。
+\end{itemize}
+
+\subsubsection*{5. \color{itemcolor}MASArena：多智能体系统基准测试框架}
+\noindent\textbf{\color{sectioncolor}主要负责人} | 系统架构与评测基础设施 \hfill \color{accentcolor}\textbf{2025年5月 -- 2025年7月}
+\begin{itemize}[leftmargin=*]
+    \item 识别出多智能体研究中评测流程碎片化、实验复现困难与跨系统横向比较失真的关键系统瓶颈，并据此抽象统一评测工作流。
+    \item 从零主导 \textbf{MASArena} 开源评测框架的架构设计与实现，统一单智能体与多智能体系统的任务执行、实验编排、结果管理与可视化分析流程。
+    \item 构建可扩展、可复用的评测基础设施，支持不同智能体、工具与数据集上的标准化比较，显著提升评测的可重现性与可解释性。
+\end{itemize}
+
+\section*{\color{sectioncolor}其他研究 \& 项目}
+\subsubsection*{\color{itemcolor}Beyond Right to be Forgotten: Managing Heterogeneity Side Effects Through Strategic Incentives}
+\noindent\textbf{\color{sectioncolor}第一作者} | 激励机制设计与理论分析 \hfill \color{accentcolor}\textbf{ACM MobiHoc 2025}
+\begin{itemize}[leftmargin=*]
+    \item 研究联邦遗忘在非独立同分布数据场景下的异质性副作用：移除指定客户端后，与其数据分布相近的剩余客户端会遭受更严重的性能退化，并进一步削弱系统稳定性与参与意愿。
+    \item 构建刻画异质性影响的理论框架，并将联邦遗忘建模为服务器与客户端之间的 Stackelberg 博弈，通过支付激励保留关键客户端；方法可将全局稳定性提升至多 6.23\%，将最差客户端退化降低 10.05\%，并较完全重训练获得最高 38.6\% 的运行效率提升。
+\end{itemize}
+
+\subsubsection*{\color{itemcolor}FedCampus / FedKit：面向智慧校园的跨平台联邦学习系统}
+\begin{itemize}[leftmargin=*]
+    \item 构建融合联邦学习与差分隐私的智慧校园真实移动应用，并开发支持 Android 和 iOS 的跨平台联邦学习流水线，覆盖模型转换、硬件加速训练与端侧聚合；系统已在昆山杜克大学完成 \textbf{100} 个定制智能手表及 Android/iOS 客户端部署，相关工作被 \textbf{IEEE INFOCOM 2024 Demo} 接收。
+\end{itemize}
+
+\section*{\color{sectioncolor}教学经历}
+\subsubsection*{\color{itemcolor}助教}
+\begin{itemize}[leftmargin=*]
+    \item ELEC3120：计算机通信网络（香港科技大学，2024年春季）
+    \item ELEC3300：嵌入式系统导论（香港科技大学，2024年秋季）
+    \item 向量空间方法与应用 | ECE 586K（昆山杜克大学，2025年春季）
+\end{itemize}
+
+\end{document}

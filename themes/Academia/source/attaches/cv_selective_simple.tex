@@ -1,0 +1,157 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{mathptmx}
+
+\definecolor{linkcolor}{RGB}{25,118,210}
+\definecolor{sectioncolor}{RGB}{99,102,241}
+\definecolor{namecolor}{RGB}{15,23,42}
+\definecolor{graytext}{RGB}{71,85,105}
+\definecolor{itemcolor}{RGB}{30,41,59}
+\definecolor{accentcolor}{RGB}{0,0,0}
+
+\hypersetup{colorlinks=true, linkcolor=linkcolor, urlcolor=linkcolor}
+\pagenumbering{gobble}
+\renewcommand{\familydefault}{\rmdefault}
+
+\titleformat{\section}{\large\bfseries\color{sectioncolor}}{\thesection}{1em}{\color{accentcolor}\rule[-0.3em]{0.5em}{0.4em}\hspace{0.5em}}
+\titleformat{\subsection}{\large\bfseries\color{sectioncolor}}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{itemcolor}}{\thesubsubsection}{1em}{}
+
+\setlist[itemize]{noitemsep, topsep=0.15em, leftmargin=1.35em}
+\setlist[enumerate]{noitemsep, topsep=0.15em, leftmargin=1.35em}
+
+\renewcommand{\labelitemi}{\textcolor{accentcolor}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{accentcolor}{\textendash}}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{24}{28}\selectfont\textbf{\color{namecolor}Jiaqi Shao}} \\ \vspace{0.1em}
+    {\color{graytext}\fontsize{9.5}{11}\selectfont PhD, HKUST | Expected Graduation: June 2027} \\ \vspace{0.03em}
+    {\color{graytext}\fontsize{9.5}{11}\selectfont Target: LLM Agent / RL / Agent Systems} \\ \vspace{0.15em}
+    \begin{tabular}{c c c c}
+        \textbf{GitHub}: \href{https://github.com/SHAO-Jiaqi757}{\color{linkcolor}Link} &
+        \textbf{Web}: \href{https://shao-jiaqi757.github.io/}{\color{linkcolor}Link} &
+        \textbf{Email}: \href{mailto:jshaoaj@connect.ust.hk}{\color{linkcolor}jshaoaj@connect.ust.hk} &
+        \textbf{Scholar}: \href{https://scholar.google.com/citations?user=P8MtRXMAAAAJ\&hl=zh-CN}{\color{linkcolor}Link}
+    \end{tabular}
+\end{center}
+\vspace{0.25em}
+
+\noindent\color{accentcolor}\rule{\textwidth}{0.5pt}
+\vspace{0.3em}
+
+\section*{\color{sectioncolor}Education}
+\subsubsection*{\color{itemcolor}Hong Kong University of Science and Technology}
+\textit{\color{graytext}Doctor of Philosophy (PhD) in Electronic and Computer Engineering} \hfill \color{accentcolor}\textbf{2023 Fall --- Present}
+\begin{itemize}[leftmargin=*]
+    \item \small{\color{graytext}Supervisor: Prof. Wei Zhang (HKUST) (Long-term Collaborator: Prof. Bing Luo (DKU))}
+\end{itemize}
+\vspace{0.3em}
+
+\subsubsection*{\color{itemcolor}The Chinese University of Hong Kong, Shenzhen}
+\textit{\color{graytext}Bachelor of Engineering in Electrical and Computer Engineer} \hfill \color{accentcolor}\textbf{2019 --- 2023}
+\begin{itemize}[leftmargin=*]
+    \item \small{\color{graytext}Stream: Computer Engineering}
+\end{itemize}
+
+\section*{\color{sectioncolor}Research Focus}
+\noindent My research focuses on \textbf{trustworthy evaluation and reliable execution of long-horizon agent tasks}. First, addressing the limitation that existing evaluations only judge final outcomes without assessing agents' cognitive capabilities during multi-turn interactions, I proposed \textbf{SeekBench} (ICLR 2026), establishing process evaluation standards from three dimensions: evidence collection, error correction, and confidence calibration; simultaneously built the \textbf{Harness Eval} framework, defining four-level long-horizon task protocols (single-turn tool chain $\rightarrow$ multi-turn iteration $\rightarrow$ cross-session persistence $\rightarrow$ autonomous long-horizon) through the "control model variables, isolate Core differences" methodology, and constructed a five-layer reward hacking defense system (Prevent Access / Inference / Specialization / Evaluator Exploit / Detection), ensuring the trustworthiness of long-horizon evaluation. On this foundation, as evaluation standards expose reliability gaps in agents during long-term execution, I design recoverable, interruptible, and sustainable agent execution frameworks.
+\vspace{0.35em}
+
+\section*{\color{sectioncolor}Experience}
+\subsubsection*{\color{itemcolor}Tencent | Senior Researcher (Hunyuan LLM Team, Qingyun Internship Program)}
+\noindent\textbf{\color{sectioncolor}Harness Eval \& Reward Hacking Defense} \hfill \color{accentcolor}\textbf{May 2026 -- Present}
+\begin{itemize}[leftmargin=*]
+    \item Research on \textbf{Harness Eval} evaluation framework, establishing the "control model variables, isolate Core differences" evaluation methodology, designing long-horizon task protocols (single-turn tool chain $\rightarrow$ multi-turn iteration $\rightarrow$ cross-session persistence $\rightarrow$ autonomous long-horizon), and systematically quantifying Core mechanism differences including namespace protection strength, Hook monotonicity, and context compression strategies, forming rigorous evaluation benchmarks for agent infrastructure.
+    \item Lead the design of \textbf{reward hacking defense system} for evaluation, systematically analyzing the Expose$\rightarrow$Exploit$\rightarrow$Mislead chain in evaluation processes, establishing five-layer defense objectives (Prevent Access / Prevent Inference / Prevent Specialization / Prevent Evaluator Exploit / Detect Suspicious Outcomes), ensuring benchmark evaluation validity. Design protections including parameter de-identification, structural heterogenization, and runtime adversarial detection.
+\end{itemize}
+
+\subsubsection*{\color{itemcolor}ByteDance | Algorithm Intern (Long-running Agent Systems)}
+\noindent\textbf{\color{sectioncolor}System Design \& Implementation} \hfill \color{accentcolor}\textbf{Jan. 2026 -- May 2026}
+\begin{itemize}[leftmargin=*]
+    \item Owned the end-to-end delivery of a long-running agent system for sustained execution, iterative refinement, and human-in-the-loop intervention.
+    \item Developed a unified framework that connected sustained execution, process evaluation, and iterative improvement for long-horizon agent behavior.
+    \item Supported \textbf{Auto}, \textbf{Interactive}, and \textbf{Human-Interrupt} modes, making the system more controllable in both autonomous and human-in-the-loop settings.
+    \item Established recovery and handoff mechanisms for failures and intervention, improving robustness and reliability in runs.
+\end{itemize}
+
+\section*{\color{sectioncolor}Representative Research}
+
+\subsubsection*{\color{itemcolor}SeekBench: Benchmarking Epistemic Competence in LLM Search Agents}
+\noindent\textbf{\color{sectioncolor}First Author} | Benchmark Design \& Evaluation Methodology \hfill \color{accentcolor}\textbf{ICLR 2026} \\
+\noindent\href{https://arxiv.org/abs/2509.22391}{\color{linkcolor}[Paper]} \\
+\noindent\textit{\color{graytext}Skills:} \textbf{Benchmark Design} | \textbf{Evaluation Methodology} | \textbf{Research Leadership}
+\begin{itemize}[leftmargin=*]
+    \item Developed \textbf{SeekBench}, a standardized benchmark for evaluating the epistemic competence of LLM search agents and exposing failures beyond task accuracy alone.
+    \item Defined a trajectory-level evaluation paradigm that analyzes how agents gather, revise, and calibrate evidence throughout the search process.
+    \item Defined three core metrics---\textit{Groundedness}, \textit{Recovery}, and \textit{Calibration}---to quantify evidence integration, adaptation to low-quality information, and evidence-aware decision-making.
+\end{itemize}
+\vspace{0.3em}
+
+\subsubsection*{\color{itemcolor}FoldAct: Efficient and Stable Context Folding for Long-Horizon Search Agents}
+\noindent\textbf{\color{sectioncolor}First Author} | Algorithm Design \& Long-Horizon Optimization \hfill \color{accentcolor}\textbf{arXiv preprint, 2025} \\
+\noindent\href{https://arxiv.org/abs/2512.22733}{\color{linkcolor}[Paper]} \\
+\noindent\textit{\color{graytext}Skills:} \textbf{Agentic RL} | \textbf{Long-horizon Optimization} | \textbf{Context Folding}
+\begin{itemize}[leftmargin=*]
+    \item Identified the core scaling bottleneck in long-horizon search-agent RL as training non-stationarity introduced by continually updated summarization policies, rather than context length alone.
+    \item Proposed \textbf{FoldAct}, a context-folding optimization framework with a structured folding-training pipeline that stabilizes summary-policy learning while improving efficiency under long-context constraints.
+    \item Delivered up to \textbf{5.19$\times$} training speedup on complex search-agent tasks without sacrificing long-horizon decision quality, validating context folding as a practical scaling primitive for agent optimization.
+\end{itemize}
+\vspace{0.3em}
+
+\subsubsection*{\color{itemcolor}MorphAgent: Self-Evolving Multi-Agent Collaboration Platform}
+\noindent\textbf{\color{sectioncolor}Co-first Author} | System Architecture \& Adaptive Collaboration \hfill \color{accentcolor}\textbf{ICML-MAS, 2025}
+\begin{itemize}[leftmargin=*]
+    \item Designed a decentralized collaboration framework where LLM agents dynamically evolve roles without predefined structures.
+    \item Established a self-evolving collaboration mechanism that improved task performance, transferability, and robustness across reasoning and coding benchmarks.
+\end{itemize}
+
+\subsubsection*{\color{itemcolor}Duke Kunshan University}
+\noindent\textbf{\color{sectioncolor}Research Mentor} \hfill \color{accentcolor}\textbf{Feb. 2025 -- Jan. 2026}
+\begin{itemize}[leftmargin=*]
+    \item Coordinated a student research pipeline spanning project scoping, implementation, experiments, and paper writing, while mentoring \textbf{10+ undergraduate students} on LLM-based narrative systems, memory, and human-AI collaboration.
+    \item Organized collaborative exchange activities with Duke-related partners, including project presentation and forum-style exhibition, strengthening cross-institution communication and early team coordination.
+\end{itemize}
+
+\subsubsection*{\color{itemcolor}MASArena: Benchmarking Framework for Multi-Agent Systems}
+\noindent\textbf{\color{sectioncolor}Principal Lead} | Systems Architecture \& Evaluation Infrastructure \hfill \color{accentcolor}\textbf{May 2025 -- July 2025}
+\begin{itemize}[leftmargin=*]
+    \item Identified a core systems bottleneck in multi-agent research: fragmented evaluation pipelines made reproduction difficult and cross-system comparison unreliable; formulated a unified evaluation workflow around this problem.
+    \item Led the architecture and implementation of \textbf{MASArena}, an open-source benchmarking stack that unifies task execution, experiment orchestration, result management, and visual analytics across single-agent and multi-agent systems.
+    \item Built reusable, extensible evaluation infrastructure for standardized comparison across agents, tools, and datasets, strengthening reproducibility and interpretability.
+\end{itemize}
+
+\section*{\color{sectioncolor}Other Research \& Projects}
+\subsubsection*{\color{itemcolor}Beyond Right to be Forgotten: Managing Heterogeneity Side Effects Through Strategic Incentives}
+\noindent\textbf{\color{sectioncolor}First Author} | Incentive Mechanism Design \& Theoretical Analysis \hfill \color{accentcolor}\textbf{ACM MobiHoc 2025}
+\begin{itemize}[leftmargin=*]
+    \item Studied heterogeneity side effects in federated unlearning under non-IID data, where removing a client can disproportionately degrade similarly distributed remaining clients and destabilize participation incentives.
+    \item Developed a theoretical framework and a Stackelberg-game-based payment mechanism to retain crucial clients, improving global stability by up to 6.23\%, reducing worst-case client degradation by 10.05\%, and achieving up to 38.6\% runtime efficiency over full retraining.
+\end{itemize}
+
+\subsubsection*{\color{itemcolor}FedCampus / FedKit: Cross-Platform Federated Learning System for Smart Campus}
+\begin{itemize}[leftmargin=*]
+    \item Built a real-world smart-campus mobile system integrating federated learning and differential privacy, and developed a cross-platform pipeline for Android and iOS covering model conversion, hardware-accelerated training, and on-device aggregation; deployed to \textbf{100} customized smart watches and Android/iOS clients, with related work accepted at \textbf{IEEE INFOCOM 2024 Demo}.
+\end{itemize}
+
+\section*{\color{sectioncolor}Teaching}
+\subsubsection*{\color{itemcolor}Teaching Assistant}
+\begin{itemize}[leftmargin=*]
+    \item ELEC3120: Computer Communication Networks (HKUST, Spring 2024)
+    \item ELEC3300: Introduction to Embedded Systems (HKUST, Fall 2024)
+    \item Vector Space Methods with Applications | ECE 586K (DKU, Spring 2025)
+\end{itemize}
+
+\end{document}
