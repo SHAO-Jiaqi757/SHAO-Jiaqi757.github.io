@@ -67,7 +67,7 @@
 \textit{\color{graytext}电子与计算机工程学士 | 专业方向：计算机工程} \hfill \color{accentcolor}\textbf{2019 -- 2023}
 
 \section*{\color{sectioncolor}研究方向}
-\noindent 我的研究聚焦长程 Agent 任务的可信评测与可靠执行。首先，针对现有评测只能判断终结果、无法评估 Agent 在多轮交互中的认知能力的问题，提出 \textbf{SeekBench}（ICLR 2026），从证据收集、错误修正、置信校准三个维度建立过程评测标准；同时建立 \textbf{Harness Eval} 框架，通过"控制模型变量、隔离 Core 差异"的方法论定义四级长程任务协议（单轮工具链 $\rightarrow$ 多轮迭代 $\rightarrow$ 跨会话持久 $\rightarrow$ 自主长程），并构建 reward hacking 五层防御体系（Prevent Access / Inference / Specialization / Evaluator Exploit / Detection），保障长程评测的可信性。在此基础上，评测标准暴露出 Agent 在长时运行中的可靠性缺口，设计可恢复、可介入、可持续的智能体执行框架。
+\noindent 我的研究聚焦 \textbf{AI Agent 的可信评测与评测基础设施}，核心关注 benchmark 分数能否真实反映 Agent 的目标能力。围绕结果之外的\textbf{过程可靠性、评测协议有效性与评测规模化}，构建覆盖执行轨迹与评测环境的系统化评测方法：通过 \textbf{SeekBench} 将评测从最终准确率扩展至证据收集、错误恢复与置信校准等认知过程；通过 \textbf{HackDetect} 分析评测暴露与 reward hacking 对分数有效性的影响；进一步将相关方法沉淀为统一的 benchmark 接入与交付规范，为后续扩大任务规模、接入更多 Agent 及自动化评测奠定基础。
 
 \section*{\color{sectioncolor}实习经历}
 \subsubsection*{\color{itemcolor}腾讯混元大模型团队 | 高级研究员（青云实习计划）}
@@ -95,7 +95,15 @@
     \item 定义三个核心指标——\textit{推理可靠性}（Groundedness）、\textit{恢复性}（Recovery）和\textit{校准性}（Calibration）——量化评估证据整合、低质量信息恢复与基于证据的决策能力。
 \end{itemize}
 
-\subsubsection*{2. \color{itemcolor}FoldAct：面向长程大语言模型智能体的稳定优化方法}
+\subsubsection*{2. \color{itemcolor}Scale-Conditioned Agent Memory：智能体记忆的规模条件评测}
+\noindent\textbf{\color{sectioncolor}第一作者} | 评测协议设计与系统实验 \hfill \color{accentcolor}\textbf{arXiv, 2026}
+\noindent\href{https://arxiv.org/abs/2605.07313}{\color{linkcolor}[论文链接]}
+\begin{itemize}[leftmargin=*]
+    \item 识别固定快照准确率无法衡量记忆随无关会话累积是否仍可用，提出 evidence-preserving growth 的规模条件评测协议：固定任务证据并逐步增加无关会话，从预算约束可靠性、尾部调用开销、失败模式及可用规模边界四个维度进行诊断。
+    \item 在 LongMemEval、LoCoMo 及 flat / planar / hierarchical 三类记忆接口上完成系统评测，揭示可扩展记忆能力取决于 Agent、接口、规模区间与交互预算；HippoRAG 的预算约束可靠性随无关会话增长下降 \textbf{16--20 个百分点}。
+\end{itemize}
+
+\subsubsection*{3. \color{itemcolor}FoldAct：面向长程大语言模型智能体的稳定优化方法}
 \noindent\textbf{\color{sectioncolor}第一作者} | 算法设计与长程优化 \hfill \color{accentcolor}\textbf{arXiv, 2025}
 \begin{itemize}[leftmargin=*]
     \item 识别出长程搜索智能体多轮强化学习难以扩展的核心瓶颈，在于摘要策略随训练持续更新所引发的训练非平稳性，而非单纯的上下文长度限制。
@@ -103,21 +111,21 @@
     \item 在复杂搜索智能体任务上实现最高 \textbf{5.19倍} 训练加速，并保持长程决策质量，验证上下文折叠是长程智能体优化中的有效扩展路径。
 \end{itemize}
 
-\subsubsection*{3. \color{itemcolor}MorphAgent：自演化多智能体协作算法}
+\subsubsection*{4. \color{itemcolor}MorphAgent：自演化多智能体协作算法}
 \noindent\textbf{\color{sectioncolor}共同第一作者} | 系统架构与自适应协作 \hfill \color{accentcolor}\textbf{ICML-MAS, 2025}
 \begin{itemize}[leftmargin=*]
     \item 设计去中心化、自适应的协作机制，使大语言模型智能体能够在没有预定义结构的情况下动态演化角色。
     \item 构建自演化协作框架，在推理与代码生成基准上提升任务表现、迁移能力与鲁棒性。
 \end{itemize}
 
-\subsubsection*{4. \color{itemcolor}昆山杜克大学科研助理}
+\subsubsection*{5. \color{itemcolor}昆山杜克大学科研助理}
 \noindent\textbf{\color{sectioncolor}研究指导} \hfill \color{accentcolor}\textbf{2025年2月 -- 2026年1月}
 \begin{itemize}[leftmargin=*]
     \item 搭建学生科研推进机制，覆盖选题设计、系统实现、实验组织与论文写作，并指导 \textbf{10余名本科生} 开展大语言模型叙事系统、记忆机制与人机协作相关研究。
     \item 组织与 Duke 相关合作伙伴的交流展示活动，包括项目汇报与论坛展出，推动跨机构合作交流与团队协同。
 \end{itemize}
 
-\subsubsection*{5. \color{itemcolor}MASArena：多智能体系统基准测试框架}
+\subsubsection*{6. \color{itemcolor}MASArena：多智能体系统基准测试框架}
 \noindent\textbf{\color{sectioncolor}主要负责人} | 系统架构与评测基础设施 \hfill \color{accentcolor}\textbf{2025年5月 -- 2025年7月}
 \begin{itemize}[leftmargin=*]
     \item 识别出多智能体研究中评测流程碎片化、实验复现困难与跨系统横向比较失真的关键系统瓶颈，并据此抽象统一评测工作流。
