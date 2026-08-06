@@ -130,8 +130,8 @@
     \subsubsection*{\color{itemcolor}腾讯混元大模型团队｜高级研究员（青云实习计划）}
     \noindent\textbf{\color{sectioncolor}RSI 评估与评测范式研究} \hfill \color{accentcolor}\textbf{2026年5月 – 至今}
     \begin{itemize}[leftmargin=*, label=\textcolor{accentcolor}{\textbullet}, itemsep=0.2em]
-        \item 研究 \textbf{RSI 评估}评测范式，建立"控制模型变量、隔离 Core 差异"的评估方法论，设计长程任务协议（单轮工具链 $\rightarrow$ 多轮迭代 $\rightarrow$ 跨会话持久 $\rightarrow$ 自主长程），系统量化命名空间保护强度、Hook 单调性、上下文压缩策略等 Core 机制差异，形成面向智能体基础设施的严格评测基准。
-        \item 主导评测 \textbf{reward hacking 防范体系}设计，系统分析评测过程中 Expose$\rightarrow$Exploit$\rightarrow$Mislead 链路，建立五层防御目标（Prevent Access / Prevent Inference / Prevent Specialization / Prevent Evaluator Exploit / Detect Suspicious Outcomes），保障 benchmark 评估有效性。设计参数去标识化、结构异构化、运行时对抗检测等防护措施。
+        \item 建立"暴露$\rightarrow$利用$\rightarrow$失真"（Expose$\rightarrow$Exploit$\rightarrow$Mislead）的 \textbf{reward hacking 分析模型}，通过 8+ 个真实案例的代码级审计（NAS 查表、cache 刷分、hidden 数据泄漏等）归纳 benchmark 侧暴露面 taxonomy。设计 L0--L3 安全等级与自动化 hack 检测规则，落地为 benchmark 上线前审计 checklist。
+        \item 负责研究型 Agent 未来评测体系的思考与构建。针对"AI 自我改进（RSI）"缺乏可信度量的问题，组织完成 8 大研究领域 20+ 个主流 benchmark 的系统调研与接入决策，提出 R0--R4 五级能力分级与配套证据标准；将评测从"一次性跑分"重构为覆盖任务设计、执行、测量、归一化、反馈、能力主张的 \textbf{六环节评测链路}，配套 hidden-test 成熟度模型与上线前完整性审计标准，使分数成为可辩护的能力证据。
     \end{itemize}
 
     \subsubsection*{\color{itemcolor}字节跳动｜算法实习生（长程智能体系统）}
